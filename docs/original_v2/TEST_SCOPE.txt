@@ -1,0 +1,40 @@
+TEST SCOPE AND KNOWN LIMITATION
+
+Pre-freeze targeted result supplied by the study operator: 117 passed, including 9 V2 tests.
+Prior full-suite log: 202 executed, 201 successful, one legacy error due to absent
+A1_CONFIRMATION_PROTOCOL fixture. No replacement fixture has been invented.
+The package builder does not rerun that suite or any numerical benchmark.
+Fresh package verification covers source compilation, actual imports, native loading/builds,
+archive integrity, source bindings, and Git history availability only.
+All text/code files selected from the runtime tests directory are listed below. Tests may
+require separately packaged evidence/input overlays and missing historical fixtures.
+
+tests/test_a2_bench.py
+tests/test_a2_catalog.py
+tests/test_a2_checker.py
+tests/test_a2_confirmation_judgment.py
+tests/test_a2_context_diagnostic.py
+tests/test_a2_numeric.py
+tests/test_a2_session.py
+tests/test_a2_tie_checker.py
+tests/test_a2_tie_integration.py
+tests/test_a2_tie_retest.py
+tests/test_access_bench.py
+tests/test_access_replay.py
+tests/test_anchor.py
+tests/test_anchor_confirmation.py
+tests/test_anchor_replay.py
+tests/test_anchor_session.py
+tests/test_checker.py
+tests/test_contracts.py
+tests/test_coverage_budget.py
+tests/test_exact_ties.py
+tests/test_implicit_catalog.py
+tests/test_projection.py
+tests/test_session.py
+tests/test_shortlist_checker.py
+tests/test_v2_admission.py
+tests/test_v2_runner.py
+tests/test_v2_worker.py
+tests/test_weight_groups.py
+tests/test_weighted_adapter.py

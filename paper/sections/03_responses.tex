@@ -1,0 +1,40 @@
+\section{Selective Response Views}
+\label{sec:responses}
+
+% P:R1
+An edit changes only one or two endpoint directions, even though its effect on the equilibrium is global. This \emph{low-rank} structure lets us score it through a small system. Write $\Delta_e=U_eJ_eU_e^\top$, with $U_e\in\R^{n\times r_e}$ and rank $r_e\in\{1,2\}$. An insertion uses $U_e=\sqrt{\omega_e}b_e$, $J_e=[1]$; a flip uses $U_e=\sqrt{\omega_e}[b_e,c_e]$, $J_e=\diag(1,-1)$. At a fixed version, abbreviate $A=A_T$ and $z=A^{-1}s$. The quantities needed for scoring are
+\begin{equation}
+ Y_e=A^{-1}U_e,\quad G_e=U_e^\top Y_e,\quad
+ h_e=U_e^\top z,\quad B_e=J_e+G_e.
+ \label{eq:gram}
+\end{equation}
+The full response $Y_e\in\R^{n\times r_e}$ solves $AY_e=U_e$. Its projection onto the edit directions is the \emph{Gram matrix} $G_e\in\R^{r_e\times r_e}$. The vector $h_e\in\R^{r_e}$ projects the equilibrium onto those directions. The \emph{pivot} $B_e$ is the small scoring system, distinct from the full child $A+\Delta_e$. The Gram depends on the graph and edit basis, not on $s$.
+
+\begin{lemma}[Response and Gram transfer]\label{lem:woodbury}
+For a legal update $A'=A+UJU^\top$, let $Y=A^{-1}U$, $h=U^\top z$, and $B=J+U^\top A^{-1}U$. The pivot is nonsingular and
+\begin{equation}
+ \begin{aligned}
+ A'^{-1}&=A^{-1}-YB^{-1}Y^\top,\\
+ z'&=z-YB^{-1}h,\qquad g=h^\top B^{-1}h.
+ \end{aligned}
+ \label{eq:woodbury}
+\end{equation}
+After committing $a$, an unchanged candidate basis has
+\begin{equation}
+ G'_e=G_e-C_{ea}B_a^{-1}C_{ea}^\top,
+ \qquad C_{ea}=U_e^\top Y_a.
+ \label{eq:transport}
+\end{equation}
+\end{lemma}
+\begin{proof}
+Both the parent $A$ and legal child $A'$ are positive definite. Since $J^{-1}=J$, the determinant identity $\det A'=\det A\det J\det B$ makes $B$ invertible. The signed Woodbury formula~\cite{Hager1989} therefore applies and gives~\eqref{eq:woodbury}. Multiplying that identity on the left by $U_e^\top$ and on the right by $U_e$ yields~\eqref{eq:transport}.
+\end{proof}
+
+% P:R2
+One winner response can update many stored views. The cross-response matrix $C_{ea}\in\R^{r_e\times r_a}$ uses only $Y_a$'s rows at candidate $e$'s endpoints. After acquiring the winner response or reusing a correctly bound resident block, transferring $m_t$ retained Grams at version $t$ takes $O(m_t)$ local work. A candidate being materialized for the first time requires its own response. Reverse transfer uses the child response and sign matrix $-J_a$.
+
+% P:R3
+The implementation removes square roots from response right-hand sides by using exact integer endpoint columns $V_e$, with $U_e=\sqrt{\omega_e}V_e$. Its normalized quantities are $\bar Y_e=A^{-1}V_e$, $\bar G_e=V_e^\top\bar Y_e$, $\bar h_e=V_e^\top z$, and $\bar B_e=J_e/\omega_e+\bar G_e$. They give the same physical gain $g_e=\bar h_e^\top\bar B_e^{-1}\bar h_e$. With $\bar C_{ea}=V_e^\top\bar Y_a$, transfer has the same form as~\eqref{eq:transport}. This normalization preserves the units of gain and $\delta$. Changing an uncommitted candidate's weight changes its normalized pivot; changing the committed operator changes its response binding.
+
+% P:R4
+These dependencies determine what can be reused. At the same graph version, a new opinion preserves $G_e$ but changes the equilibrium, projection, gain interval, and coverage. A commit requires Gram transfer or refresh and evidence for the child decision. Restricting the catalog preserves surviving scores when the graph, opinion, and edit definitions are unchanged; changing the catalog, budget, or tolerance requires a current decision test. We now turn to the complementary task: covering candidates whose responses have not been acquired.

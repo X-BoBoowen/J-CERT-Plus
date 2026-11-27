@@ -1,0 +1,2 @@
+n,edges,bridges,shortcuts,degree_mean,degree_p95,degree_max,mean_distance_16,symbolic_nnz,symbol_flops,symbolic_peak_mib,ordering,super_xsize,super_maxcsize,fill,peak_mib
+50000,164445,3120,1562,6.5778,18.0,55,9.78112937258745,1610184,577919928.0,7.5792236328125,3,3107949,547600,7.508050414760726,92.12109375

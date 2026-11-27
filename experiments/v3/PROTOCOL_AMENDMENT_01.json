@@ -1,0 +1,22 @@
+{
+  "id": "01",
+  "status": "frozen_before_guard_execution",
+  "reason": "Independent static review found assertion stripping under optimized Python could produce unchecked mathematical-probe status. Add exactly one fail-closed optimized-import check; pin ordinary child environment.",
+  "base_protocol_sha256": "09d93fbf9a49aaf71351125288a34e9b6a8a6c92727e3ede889b3feb63d4d0ea",
+  "additional_run": {
+    "task": "optimized_import_guard",
+    "category": "micro_test",
+    "expected_outcome": "rejected_optimized_import_before_any_numeric_work",
+    "command": [
+      "python",
+      "-O",
+      "-c",
+      "import sys; sys.path.insert(0, 'v3/code'); import block_probe"
+    ],
+    "timeout_seconds": 120,
+    "memory_limit_bytes": 2147483648
+  },
+  "mathematical_inputs_changed": false,
+  "service_contract_changed": false,
+  "numeric_budget_increased": false
+}

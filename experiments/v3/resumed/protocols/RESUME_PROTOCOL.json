@@ -1,0 +1,31 @@
+{
+  "schema": "jcert-v3-resumed-bounded-diagnostics-1",
+  "date_local": "2026-11-26",
+  "timezone": "Asia/Tokyo",
+  "scope": "Resume the already authorized V3 plan after all four original V2 packages arrived; the previous source-limited protocol and runs remain historical evidence.",
+  "v2_baseline_commit": "4c2c7b7e84c7c03ee56d45453fea6950c94817bd",
+  "runtime_branch": "research/v3-value-diagnostics-20261126",
+  "numeric_budget_seconds": 10800,
+  "previous_spent_seconds": 1.1494926750001468,
+  "verification_reserve_seconds": 600,
+  "scheduler": "root only; control/resumed_budget_run.py; original budget_ledger.jsonl; no concurrent numerical children",
+  "numeric_threads": 1,
+  "memory_policy": "hard RLIMIT_AS; process RSS separately recorded",
+  "category_limits": {
+    "micro": {"seconds": 120, "memory_bytes": 2147483648},
+    "alpha_diagnosis": {"seconds": 600, "memory_bytes": 4294967296, "max_processes": 2},
+    "small_timing": {"seconds": 180, "memory_bytes": 2147483648, "max_processes": 36},
+    "profile": {"seconds": 180, "memory_bytes": 2147483648, "max_processes": 1},
+    "slashdot_probe": {"seconds": 600, "memory_bytes": 4294967296, "max_processes": 3},
+    "delivery_check": {"seconds": 120, "memory_bytes": 2147483648}
+  },
+  "initial_timing_max_workers": 12,
+  "extra_timing_condition": "Only if additional repeats can change the single main research recommendation; freeze an explicit rationale before adding them.",
+  "delta": 0,
+  "new_seeds": false,
+  "production_numerical_changes": "None planned; any correctness fix must be separately recorded and checked before performance expansion.",
+  "g_access_scope": "Independent flip-first whole-insertion bound and diagonal pair-block coverage, reusing the existing common numerical core; no H insertion frontier as fallback.",
+  "alpha_scope": "Freeze finite structural witness search and any guaranteed numeric fallback before execution. Pair relation and full decision verification remain separate.",
+  "slashdot_gate": "Only if correctness is closed and one existing supported backend configuration could change the next investment decision; no full Q4 or configuration search.",
+  "stop": "Stop performance expansion on an unclosed correctness issue; stop at category or cumulative limits and preserve all results. No automatic extra seeds or retries."
+}

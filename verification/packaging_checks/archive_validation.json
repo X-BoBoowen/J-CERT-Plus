@@ -1,0 +1,60 @@
+{
+  "G_associated_states": 30,
+  "G_interval_observations": 90,
+  "archive_only_analyses": true,
+  "archives": [
+    {
+      "members": 201,
+      "path": "artifacts/frozen/V2_Code.zip",
+      "payload_files": 200
+    },
+    {
+      "members": 894,
+      "path": "artifacts/frozen/V2_Evidence.zip",
+      "payload_files": 893
+    },
+    {
+      "members": 29,
+      "path": "artifacts/frozen/V2_Inputs.zip",
+      "payload_files": 28
+    },
+    {
+      "members": 38,
+      "path": "artifacts/frozen/V3_Code.zip",
+      "payload_files": 37
+    },
+    {
+      "members": 247,
+      "path": "artifacts/frozen/V3_Evidence.zip",
+      "payload_files": 246
+    },
+    {
+      "members": 32,
+      "path": "artifacts/frozen/V4_Code.zip",
+      "payload_files": 31
+    },
+    {
+      "members": 333,
+      "path": "artifacts/frozen/V4_Evidence.zip",
+      "payload_files": 332
+    }
+  ],
+  "complete_g_states": 300,
+  "g_mechanism_rows": 349,
+  "input_members": 28,
+  "legacy_members": [
+    {
+      "folder": "legacy/v6",
+      "members": 309
+    },
+    {
+      "folder": "legacy/bounded_scale",
+      "members": 37
+    }
+  ],
+  "new_numerical_replays": 0,
+  "new_production_benchmarks": 0,
+  "scientific_commit": "9d09794b6a6de8a4c97f615abf3f3cae1f458b75",
+  "source_pins": 178,
+  "status": "passed"
+}

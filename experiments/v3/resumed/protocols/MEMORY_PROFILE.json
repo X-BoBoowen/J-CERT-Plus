@@ -1,0 +1,31 @@
+{
+  "id": "V3-single-fixed-Alpha-slow-memory-accounting-profile",
+  "graph": "Alpha",
+  "stream": "slow",
+  "selection_rule": "first cell in already frozen six-cell H/G roster; no selection by speed",
+  "method_order": [
+    "H",
+    "G"
+  ],
+  "requests": 4,
+  "budget_per_request": 15,
+  "delta": 0,
+  "freeze": "v3/resumed/protocols/HG_FROZEN.json",
+  "script_sha256": "3ed7d6f674be7493a2aa1b137d2af2fa20e5a2e8c988eb307c382360e24282ea",
+  "resources": {
+    "seconds": 180,
+    "memory_bytes": 2147483648,
+    "numeric_threads": 1,
+    "processes": 1
+  },
+  "decision": "Determine whether the observed complete-service H/G gap is mostly repeated deep memory reporting and must be qualified before judging H-specific performance value.",
+  "timers": [
+    "Access.observe_frontier",
+    "GAccess._observe_memory",
+    "AllCatalog.memory",
+    "long_promotion.store_bytes"
+  ],
+  "nonoverlap": "Wrapped outer callsites must never nest; fail if they do. Recursive internal _python_size is not separately wrapped or double-counted.",
+  "changes": "No disabled work, no source/core/policy changes. Temporary timing wrappers only. Fresh session/factor for each method.",
+  "interpretation": "Diagnostic totals and arithmetic residuals only, not a second formal replicate or an instrumentation-free benchmark. No further profiling or optimization is authorized automatically."
+}

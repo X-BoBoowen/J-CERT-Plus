@@ -1,0 +1,85 @@
+% J-CERT+ final narrative revision. Official PVLDB 2027 / Volume 20 template.
+% Template files are unmodified; provenance is in template_source/provenance.json.
+\documentclass[sigconf,nonacm]{acmart}
+%%% do not modify the following VLDB block %%
+%%% VLDB block start %%%
+\usepackage{pvldb}
+%%% VLDB block end %%%
+\renewcommand\vldbdoi{XX.XX/XXX.XX}
+\renewcommand\vldbpages{XXX-XXX}
+\renewcommand\vldbavailabilityurl{https://github.com/X-BoBoowen/J-CERT-Plus}
+
+\usepackage{amsmath,bm}
+\usepackage{booktabs,tabularx,multirow}
+\usepackage{algorithm,algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newcommand{\R}{\mathbb R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\up}{\operatorname{up}}
+\newcommand{\down}{\operatorname{down}}
+\newcommand{\fl}{\operatorname{fl}}
+\newcommand{\sym}{\operatorname{sym}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\graphicspath{{figures/}}
+
+\begin{document}
+\title[J-CERT+: Certified Full-Catalog Intervention Selection in Signed Graphs]{J-CERT+: Certified Full-Catalog\texorpdfstring{\\}{ }Intervention Selection in Signed Graphs}
+\author{Bowen Xue}
+\affiliation{%
+  \institution{Hangzhou Normal University}
+  \city{Hangzhou}
+  \country{China}}
+\email{15869667756@163.com}
+\author{Tianyi Chen}
+\affiliation{%
+  \institution{Hangzhou Normal University}
+  \city{Hangzhou}
+  \country{China}}
+\email{hi@tychen.cc}
+\author{Yuze Xia}
+\affiliation{%
+  \institution{Hangzhou Normal University}
+  \city{Hangzhou}
+  \country{China}}
+\email{2024210401038@stu.hznu.edu.cn}
+\renewcommand{\shortauthors}{Xue et al.}
+
+\begin{abstract}
+% P:AB1
+Selecting an intervention in a signed graph is a ranking query whose scores can change after each accepted edit. A service must evaluate promising edits and justify its choice against every legal alternative, including candidates it never scores. We present J-CERT+, which separates reusable response summaries from current-catalog coverage. Small endpoint summaries support scoring and certified transfer across versions, while coverage bounds direct numerical work toward contenders. Row-frontier and block access paths cover uniformly weighted insertions on initially missing edges and magnitude-preserving flips of initially negative edges. Gain intervals and checked equalities certify positive, tolerance-optimal accepted edits. In an instrumented comparison on Bitcoin Alpha and OTC, row-frontier access reduces aggregate setup-plus-service time by a factor of 3.79 relative to explicit indexing across 15 matched repetitions on the five completed streams of a six-stream confirmation batch. A separate common-lightweight comparison on the same inputs gives block access 12.56\% lower aggregate cost than row access, exchanging cheaper coverage preparation for greater response demand. Independent full-catalog replay verifies all 30 decisions in two preselected row-frontier requests.
+\end{abstract}
+
+\maketitle
+%%% do not modify the following VLDB block %%
+%%% VLDB block start %%%
+\vldbtopmatter
+%%% VLDB block end %%%
+
+\input{sections/01_introduction}
+\input{sections/02_contract}
+\input{sections/03_responses}
+\input{sections/04_coverage}
+\input{sections/05_numerics}
+\input{sections/06_execution}
+\input{sections/07_evaluation}
+\input{sections/08_related}
+\input{sections/09_conclusion}
+\input{sections/10_appendix}
+
+\begin{acks}
+% P:AK1
+\noindent\textbf{Declaration on the use of generative AI tools}\par
+Generative AI tools were used only for language polishing and grammar checking during the preparation of this manuscript. The authors reviewed and verified all AI-assisted edits and take full responsibility for the content of the manuscript.\label{last-body-page}
+\end{acks}
+
+% The class balances the last reference page through its standard end hook.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}

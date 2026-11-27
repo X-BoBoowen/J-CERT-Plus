@@ -1,0 +1,8 @@
+% P:U1
+The confirmation compares D, S, and H on six Q4 streams generated after freezing the numerical and access parameters, one stream per graph and opinion family. Each method runs three repetitions on a single-threaded Xeon Platinum 8573C. Table~\ref{tab:evidence_scope} gives the full execution population.
+
+% P:U3
+H is faster than both references in all 15 matched repetitions on the five completed streams. Aggregate setup-plus-Q4 costs are 211.020 seconds for D, 787.463 for S, and 55.624 for H: D/H $=3.794$ and S/H $=14.157$. These complete costs include reached-version frontier preparation, demonstrating that selective access pays for its own setup under the instrumented policy (Figure~\ref{fig:costs}).
+
+% P:U2
+The sixth stream, Alpha signed-neighbor, has a shared unresolved fourth comparison in its first request after three accepted edits; the other three requests complete. Its partial costs are retained separately from complete-Q4 times. Section~\ref{sec:completion} explains the candidate equality behind this comparison.

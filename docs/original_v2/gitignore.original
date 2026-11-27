@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.so
+raw/
+data/
+baseline_r15/
+logs/
+analysis/
+v2/
+review/RESEARCH_HISTORY.bundle
+review/ARTIFACT_SHA256.json

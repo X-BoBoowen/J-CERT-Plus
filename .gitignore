@@ -1,0 +1,21 @@
+# Local environments and derived outputs only. Frozen inputs, native libraries,
+# and evidence archives are intentionally tracked.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+/out/
+/local_runs/
+/restored_runtime/
+/paper/*.aux
+/paper/*.bbl
+/paper/*.blg
+/paper/*.fdb_latexmk
+/paper/*.fls
+/paper/*.log
+/paper/*.out
+/paper/review/mpl_cache/

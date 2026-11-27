@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying J-CERT+ manuscript."
+title: "J-CERT+: Certified Full-Catalog Intervention Selection in Signed Graphs"
+type: software
+authors:
+  - family-names: Xue
+    given-names: Bowen
+    affiliation: Hangzhou Normal University
+  - family-names: Chen
+    given-names: Tianyi
+    affiliation: Hangzhou Normal University
+  - family-names: Xia
+    given-names: Yuze
+    affiliation: Hangzhou Normal University
+repository-code: "https://github.com/X-BoBoowen/J-CERT-Plus"
+version: "V4"

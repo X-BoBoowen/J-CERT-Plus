@@ -1,0 +1,184 @@
+{
+  "source_archive": "J_CERT_Plus_Bounded_Scale.zip",
+  "source_archive_sha256": "5b63d891b6fbcc6aa310c6ac9553fb3071b4a5d0319e6bea1d0f27d267faf7d8",
+  "selected_member_count": 35,
+  "members": [
+    {
+      "path": "data/scale_bounded_10000.csv",
+      "bytes": 37312,
+      "sha256": "1e6c2b2c7ff00622f926bd7a1d12a419aecc249570b8d00c0c52fdf90fd02ce7"
+    },
+    {
+      "path": "data/scale_bounded_100000.csv",
+      "bytes": 37210,
+      "sha256": "5b30f70d5223b84f8a18434c0b66de81bc3a10d09dbb8ae873c19f3000a285a2"
+    },
+    {
+      "path": "data/scale_bounded_50000.csv",
+      "bytes": 37109,
+      "sha256": "caa0ba2ac0858d83167bf705592cd69bc2987e946065c277add137d65effc7fe"
+    },
+    {
+      "path": "data/scale_bounded_500000.csv",
+      "bytes": 37379,
+      "sha256": "fd60f75c1bc8f2c15cbda3a59d81e688a76be4c86190bc0137a2199a79a02830"
+    },
+    {
+      "path": "data/scale_bounded_input_10000.npz",
+      "bytes": 163070,
+      "sha256": "a880ad18913f5217ae139edddfea87d49283ed16dbf65347abf9a08ff89087c4"
+    },
+    {
+      "path": "data/scale_bounded_input_100000.npz",
+      "bytes": 1603070,
+      "sha256": "ef45827a169feca7cecf1a9049ed31980e472cc2a324e5ba85c366cf4e828a9f"
+    },
+    {
+      "path": "data/scale_bounded_input_50000.npz",
+      "bytes": 803070,
+      "sha256": "bc5fc7c525dc47a072dfc5ac8b0b1dd35fcc4f9f244fc4b6f71b44de3ec26624"
+    },
+    {
+      "path": "data/scale_bounded_input_500000.npz",
+      "bytes": 8003070,
+      "sha256": "38f867810482bb16d76c17fee760b01a2244216741caca46de172f8d77995806"
+    },
+    {
+      "path": "data/scale_bounded_ranges.csv",
+      "bytes": 791,
+      "sha256": "c33c62f7cfc572f130c868bcfee46b17c6cb246e308af81663d67bb5e1fe6160"
+    },
+    {
+      "path": "data/scale_bounded_summary.csv",
+      "bytes": 10503,
+      "sha256": "7c6c8404cee3a3236e91c9f392e6aa569e943b2383aec170e050892a238d5323"
+    },
+    {
+      "path": "data/scale_bounded_verified.csv",
+      "bytes": 36751,
+      "sha256": "676927c6bc2fb33fba95aee739da25be9ce16d780f7bce741f193f4467a7d23c"
+    },
+    {
+      "path": "figures/scale_bounded.pdf",
+      "bytes": 54378,
+      "sha256": "c71b82423cc8334a33cc07d05fd3acdc98d22b59ab07d391ae7c836824fc3ac1"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 113,
+      "sha256": "d7e8ab5cdac84f5bc7f81bd2ab005be0bf0ebceffa4ddc728dc789c9f43dedac"
+    },
+    {
+      "path": "tools/bounds.py",
+      "bytes": 3320,
+      "sha256": "de1f547a8f9f28a6ce7f0608d19c26a80b4c0358fa10127971cee9e61e1e0c00"
+    },
+    {
+      "path": "tools/certified_engine.py",
+      "bytes": 8725,
+      "sha256": "ac4481097bdb851f33ae52791290006ce3a806ecafd3c088c1a72d570aa17587"
+    },
+    {
+      "path": "tools/cholmod_backend.py",
+      "bytes": 5606,
+      "sha256": "bfa140ff08850a25d6ad438c8925a06e00ab1b02a473cd9e72125fea67e09aa2"
+    },
+    {
+      "path": "tools/cholmod_bridge.c",
+      "bytes": 4595,
+      "sha256": "471e3c9bfc77f8430d2a768fc69a2b740e99be41672b5909444d3f8a8706e0a4"
+    },
+    {
+      "path": "tools/cost_planner.py",
+      "bytes": 7984,
+      "sha256": "c505ea750c34c8ff65745831f1a67403005bd3b65be164c3722cd1a6e210e4d3"
+    },
+    {
+      "path": "tools/engine.py",
+      "bytes": 5542,
+      "sha256": "d78545e803e8984545a18998470b1852535dd2864dc182c1e2eeb7695ae097b1"
+    },
+    {
+      "path": "tools/fast_policy_kernel.py",
+      "bytes": 14704,
+      "sha256": "367c4ec9706d009b848a947d1c811b2f4aaaeb0a321d5f7fa2e490ef414e595b"
+    },
+    {
+      "path": "tools/linview_delta.py",
+      "bytes": 18083,
+      "sha256": "ab1412ac3224fd6633ff771ff9184c6a287d036b57384fb9a8f391b8f0c69504"
+    },
+    {
+      "path": "tools/native_planner.py",
+      "bytes": 1584,
+      "sha256": "1281d86758ddf876a82e6e120dd572180809c485a805eff96bb19e4bcc173e63"
+    },
+    {
+      "path": "tools/native_scale_frontier.py",
+      "bytes": 5058,
+      "sha256": "a104ceff6d74f2313c82feb5c41f67dd14fe51f25e98374c30469071c1ae573f"
+    },
+    {
+      "path": "tools/orthogonal.py",
+      "bytes": 5353,
+      "sha256": "d3971dabe8120ba6da72207099490f30f4f3b031ecc993739f3a0a80a18194f0"
+    },
+    {
+      "path": "tools/paired_pcg.c",
+      "bytes": 3842,
+      "sha256": "e087cb5640482a56d6aa626da11cded284e36bc3440896d29c3f74bb14ebdf4a"
+    },
+    {
+      "path": "tools/paired_pcg.py",
+      "bytes": 2749,
+      "sha256": "8d3d5ed8ac3386f78ffc1753610ae7c1174480149d3804fba030fba56e838b2c"
+    },
+    {
+      "path": "tools/planned_matrix.py",
+      "bytes": 8757,
+      "sha256": "1602057ddc05db056019ee78eb05964ce758fde4be1938f0b410df7c1cb6d302"
+    },
+    {
+      "path": "tools/policy_kernel.py",
+      "bytes": 18239,
+      "sha256": "fc6bb1e064562854efe36db2cab7f56814eb8654a647c91eea2a89f52bb98462"
+    },
+    {
+      "path": "tools/scale_bounded.py",
+      "bytes": 10640,
+      "sha256": "c68c95171fe2450fcd75a75abcd8bf8e1df8b0c6ffd5bdacd99eff19ec0671d0"
+    },
+    {
+      "path": "tools/scale_bounded_report.py",
+      "bytes": 10775,
+      "sha256": "8a5a1ac419796626284e50c705bf411fb2b3668c89620103c9f549e55cd101ee"
+    },
+    {
+      "path": "tools/scale_bounded_verify.py",
+      "bytes": 7325,
+      "sha256": "0db5d1a8139c9d4a2583b471f6fc6dd9031d589943d74cd962c234a43105b23d"
+    },
+    {
+      "path": "tools/scale_frontier.py",
+      "bytes": 21648,
+      "sha256": "59b83acddb511f413f40c23b45767d5c65eca76678587e9a5c43aeef8927aba4"
+    },
+    {
+      "path": "tools/scale_symbolic.c",
+      "bytes": 1523,
+      "sha256": "3c1ef794545e2b7542f989ec9b26126b0661a16a09fe2d3f408ed78c94848d1c"
+    },
+    {
+      "path": "tools/scale_views.py",
+      "bytes": 26007,
+      "sha256": "ebf62833506e49993da8f0274e40fad53d4d4cb318ffdf07f1ca586ab647c1aa"
+    },
+    {
+      "path": "tools/workloads.py",
+      "bytes": 34027,
+      "sha256": "95593f6af398f2dbb3d76bd7a1a9d46addf87f761b4ca6925fc9f85c5263ac67"
+    }
+  ],
+  "selection": "Historical research data, inputs, source and documentation only; old manuscripts and compiled executables excluded.",
+  "scope": "Original scientific source and data bytes. English-translated documentation is excluded from the original-byte member list."
+}

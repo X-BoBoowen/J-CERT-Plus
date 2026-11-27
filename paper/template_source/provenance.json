@@ -1,0 +1,32 @@
+{
+  "acmart.cls": {
+    "url": "https://raw.githubusercontent.com/vldbproceedings/VLDB-Template/main/acmart.cls",
+    "sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+    "bytes": 121737,
+    "local": "paper/acmart.cls"
+  },
+  "pvldb.sty": {
+    "url": "https://raw.githubusercontent.com/vldbproceedings/VLDB-Template/main/pvldb.sty",
+    "sha256": "52ad3948f3231b31d2ac90f470c1759e7f96add7b577ec4e267dfbdc87fc4eb2",
+    "bytes": 4351,
+    "local": "paper/pvldb.sty"
+  },
+  "ACM-Reference-Format.bst": {
+    "url": "https://raw.githubusercontent.com/vldbproceedings/VLDB-Template/main/ACM-Reference-Format.bst",
+    "sha256": "0590db3b8d255a3af91982ab710f3ace5fcaa52434020c9af8a4f141b00b68f3",
+    "bytes": 84856,
+    "local": "paper/ACM-Reference-Format.bst"
+  },
+  "main.tex": {
+    "url": "https://raw.githubusercontent.com/vldbproceedings/VLDB-Template/main/main.tex",
+    "sha256": "11bc4060ce9b4a2193e504d0064ed0272529b2aa77911a8e46c06106e045f9e8",
+    "bytes": 11595,
+    "local": "paper/template_source/main.tex"
+  },
+  "README.md": {
+    "url": "https://raw.githubusercontent.com/vldbproceedings/VLDB-Template/main/README.md",
+    "sha256": "b5fd183611475e946c41bc9d0e8c0f977633b0bcc9a2be3359ae1bbcd07db207",
+    "bytes": 2986,
+    "local": "paper/template_source/README.md"
+  }
+}

@@ -1,0 +1,63 @@
+\appendix
+\section{Arithmetic and Precision Details}
+\label{app:arithmetic}
+
+% P:A1
+For the allowances in Section~\ref{sec:numerics}, assume finite represented inputs with no overflow or unaccounted underflow. Let $u=2^{-53}$ be the binary64 unit roundoff, $\gamma_k=ku/(1-ku)$ for $ku<1$, and $\mathcal N$ be an outward upper Euclidean or Frobenius norm~\cite{Higham2002}. Write $\mathcal P_k(X,Y)=\gamma_k\mathcal N(X)\mathcal N(Y)$ and $\mathcal S(X,Y)=\gamma_1\mathcal N(|X|+|Y|)$. For input radii $R_X,R_Y$ and a product with inner dimension $k$, product and sum errors propagate by
+\begin{equation}
+ \begin{aligned}
+ R_{XY}&=\mathcal N(\widetilde X)R_Y+\mathcal N(\widetilde Y)R_X\\
+       &\qquad+R_XR_Y+\mathcal P_k(\widetilde X,\widetilde Y),\\
+ R_{X\pm Y}&=R_X+R_Y+\mathcal S(\widetilde X,\widetilde Y).
+ \end{aligned}
+ \label{eq:rounding}
+\end{equation}
+Starting with zero radii on represented center operands isolates arithmetic error in center evaluation, symmetrization, and trial residuals. For example, for an $r\times r$ pivot with $P_B=\fl(\widetilde B\widetilde T)$, use $\eta_T=\mathcal N(\fl(I-P_B))+\mathcal P_r(\widetilde B,\widetilde T)+\mathcal S(I,P_B)$. The operators $\down$ and $\up$ round downward and upward. Final endpoints are $\down(\widehat g-R)$ and $\up(\widehat g+R)$, with their outward-rounding excess included in the reported complete radius~\cite{Rump2010}.
+
+% P:A2
+To turn a computed residual into a state-error bound, let $\widehat r=\fl(\widetilde A\widetilde x-\widetilde b)$. For row length $d_i$ and entrywise input-error bounds $\Delta A,\Delta b$, each component of the true residual is bounded in magnitude by
+\begin{equation}
+ \begin{aligned}
+ q_i=\up\!\big[&|\widehat r_i|+
+ \gamma_{d_i+5}(|\widetilde A||\widetilde x|+|\widetilde b|)_i\\
+ &+(\Delta A|\widetilde x|+\Delta b)_i\big].
+ \end{aligned}
+ \label{eq:residual}
+\end{equation}
+Here $q$ is the residual-bound vector, local to this appendix. The contraction bounds of Section~\ref{sec:contract} make $\mathcal N(q)$ and $\max_iq_i$ state-error bounds in the Euclidean and maximum norms. Response columns obey the same contraction, with column bounds combined in Frobenius norm. Assume assembled $\widetilde U$ preserves the exact basis's two-endpoint support $Q$. If $E_U\ge\|U-\widetilde U\|_2$ and the residual against $\widetilde U$ yields $\bar r\ge\|A^{-1}\widetilde U-\widetilde Y\|_2$, endpoint contraction gives
+\begin{equation}
+ \begin{aligned}
+ E_G={}&\|U\|_2(\bar r+E_U)+E_U\|\widetilde Y_Q\|_2\\
+ &+\mathcal P_2(\widetilde U_Q^\top,\widetilde Y_Q).
+ \end{aligned}
+ \label{eq:gram-error}
+\end{equation}
+Expanding the corresponding products gives projection and cross-response errors by the same reasoning. On two endpoint rows, a state two-norm bound can be tightened to the minimum of its global two-norm bound and $\sqrt2$ times its maximum-norm bound; for a rank-$r_a$ response block use $\sqrt{2r_a}$. The integer normalized basis sets $E_U=0$. Applying these allowances to state perturbation and local inversion also certifies the endpoint screens used for coverage.
+
+% P:A7
+The main service binds fixed-point integers to physical gain units. Opinion numerators have denominator $2^{16}$, and the stored integer operator is $16A_T$. The fine proof grid uses coefficient denominator $2^{48}$. Raw score integers $L_{\rm raw},U_{\rm raw}$ use denominator $2^{96}$; multiplying each by $16/2^{96}$ gives the physical gain endpoints. Published decision numerators already include the factor 16. Equality witnesses bind these conventions to the current operator and opinion, keeping the relation and gain intervals in the same units.
+
+\subsection{Proof of Theorem~\ref{thm:finite}}
+\label{app:finite}
+
+% P:A3
+We first bound error through $b$ transfers using the normwise enclosure; any valid tighter enclosure may be retained. Maximum-norm contraction, endpoint support, and~\eqref{eq:gram-error} give
+\[
+ E_G(0)\le(3k+1+2\eps)\eps\le(a_0-1)\eps,
+ \quad E_C,E_h\le a_0\eps,
+\]
+and $\|\widetilde C\|_2\le c_0$, $\|\widetilde h\|_2\le\bar h$. Each input, true-residual, and complete local allowance uses the theorem's common $\eps$ in its stated norm.
+
+% P:A4
+First control the inverse trial used in each local update. Let $R_T=I-\widetilde B\widetilde T$. Equation~\eqref{eq:inverse-error} and the triangle inequality imply
+\[
+ (1-\beta E_B)\|\widetilde T\|_2
+ \le\beta(1+\|R_T\|_2).
+\]
+Whenever $E_B\le H_b\eps$,~\eqref{eq:finite-eps} makes the left coefficient at least $3/4$; with $\|R_T\|_2\le\eps\le1/4$, this gives $\|\widetilde T\|_2<2\beta$. The policy constructs the winner pivot from its current certified transition-response block, so its stronger fresh bound is $E_{B,a}\le a_0\eps$. Thus $E_{T,a}\le t_0\eps$. Substituting $E_C\le a_0\eps$, $\|\widetilde C\|_2\le c_0$, and $\eps\le1$ into~\eqref{eq:normwise} shows that one transfer increases a Gram radius by at most $\ell_0\eps$.
+
+% P:A5
+The single-transfer bound now closes the induction: $E_G(j)\le(a_0-1+j\ell_0)\eps$ after $j\le b$ commits. Adding pivot assembly gives $E_B\le H_b\eps$, so the inverse-trial premise continues to hold at every reached version. Equations~\eqref{eq:inverse-error} and~\eqref{eq:normwise} then give every competitive score a complete radius at most $F_0\eps\le\delta/8$, hence interval width at most $\delta/4$.
+
+% P:A6
+For the decision, retain valid unseen and endpoint exclusions; an undischargeable upper bound supplies no narrow score interval. By finite complete access, materialize and score every remaining candidate whose bound has not been discharged by a current decision cut; conservatively scoring the entire remaining catalog terminates because it is finite. Now every undiscarded candidate has the width bound proved above. If all remaining upper gains are at most $\delta$, the contract permits a tolerance stop. Otherwise a scored interval has $u_e>\delta$, hence $\ell_e>3\delta/4$. Choosing the largest competitive lower endpoint gives $\ell_a>0$ and $u_e\le\ell_e+\delta/4\le\ell_a+\delta/4$ for every other competitive edit. Excluded candidates remain covered by their certified cuts. Thus acceptance or stopping requires no inherited-view numerical reanchor. Charge one first response block for each of the $N$ materialized candidates and at most one current transition block per commit, reusing qualifying resident blocks. This proves the response-block bound $N+b$. The number $N$ may reach catalog size; state certification, coverage, local transfer, and checker work remain outside the count.

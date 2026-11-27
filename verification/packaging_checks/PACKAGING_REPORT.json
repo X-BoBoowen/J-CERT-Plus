@@ -1,0 +1,26 @@
+{
+  "manuscript_snapshot": {
+    "source_archive": "J_CERT_Plus_References_Source_20261127.zip",
+    "source_archive_sha256": "f107886078d969e3db87d527495af60c9a0c14cc379753155cd92a2e0fbfacfd",
+    "compiled_pdf_sha256": "125fc3281efb60fc93ff864796241ac19dfef374341f2d94e35eec530636b2bf",
+    "uploaded_pdf_sha256": "415d30ccc58e74035dd5b7b9bbf14623524987f9d23cfeb51d070d50f2c6da77",
+    "pdf_byte_identity_between_upload_and_source_bound_original": false,
+    "pdftotext_layout_comparison": "identical",
+    "decision": "use source-bound compiled PDF matching original acceptance manifest; manuscript unchanged",
+    "metadata_placeholders_remain": true
+  },
+  "scientific_runtime_commit": "9d09794b6a6de8a4c97f615abf3f3cae1f458b75",
+  "verified_source_pins": 178,
+  "verification": {
+    "g_mechanism_original_record_equal": true,
+    "direct_provenance_original_request_records_equal": true,
+    "archive_verification": "passed",
+    "restored_git_commit_verified": true,
+    "existing_smoke_test_methods_passed": 29,
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "new_real_graph_performance_experiments": 0,
+    "new_full_catalog_real_graph_replays": 0
+  },
+  "packaging_scope": "curated current reproducibility repository; no public upload; no software license assigned"
+}

@@ -1,0 +1,1193 @@
+{
+  "schema_version": 5,
+  "manuscript": "main.tex",
+  "title": "J-CERT+: Certified Full-Catalog Intervention Selection in Signed Graphs",
+  "editorial_revision": "2026-11-27 literature additions after figure replacement",
+  "scientific_experiments_in_editorial_revision": 0,
+  "contribution_count": 3,
+  "contributions": [
+    {
+      "id": "C1",
+      "claim": "Assign local response information and current full-catalog coverage distinct validity and maintenance responsibilities, joined by one strict-positive and canonical-selection contract.",
+      "paragraphs": [
+        "I1",
+        "I4",
+        "I6",
+        "C3",
+        "C4",
+        "R4",
+        "X1"
+      ],
+      "sections": [
+        "sec:contract",
+        "sec:coverage",
+        "sec:responses",
+        "sec:execution"
+      ],
+      "formal_objects": [
+        "eq:decision",
+        "eq:accept",
+        "lem:woodbury",
+        "eq:transport",
+        "prop:equality"
+      ],
+      "algorithm": "alg:service",
+      "tables_figures": [
+        "fig:system",
+        "tab:verification"
+      ],
+      "evidence_ids": [
+        "E-V2-alpha-replay",
+        "E-V2-otc-replay",
+        "E-V3-G-coverage",
+        "E-V4-invariance"
+      ],
+      "scope": "Coverage must be justified for the current operator, opinion, legal domain and threshold. No universal physical-reconstruction lower bound, global edit-set optimality or universal delta=0 completion follows."
+    },
+    {
+      "id": "C2",
+      "claim": "Provide independent implicit access organizations for uniform-weight insertions on all root nonedges and natural-weight flips of negative root edges: H joint row coverage and G flip-first diagonal block coverage.",
+      "paragraphs": [
+        "I5",
+        "F4",
+        "F6",
+        "F7",
+        "G1",
+        "G2",
+        "G3",
+        "F8",
+        "F9",
+        "E8",
+        "E8a",
+        "S1"
+      ],
+      "sections": [
+        "sec:coverage"
+      ],
+      "formal_objects": [
+        "thm:endpoint",
+        "eq:insertion-bound",
+        "eq:frontier-caps",
+        "thm:coverage",
+        "eq:global-insertion",
+        "eq:block-insertion",
+        "eq:frontier-cost"
+      ],
+      "algorithm": "alg:service",
+      "tables_figures": [
+        "fig:costs",
+        "fig:hg_costs",
+        "tab:hg_work",
+        "tab:g_mechanism"
+      ],
+      "evidence_ids": [
+        "E-V2-aggregate",
+        "E-V3-G-coverage",
+        "E-V3-G-checks",
+        "E-V4-summary",
+        "E-freeze-mechanisms"
+      ],
+      "scope": "H coverage theorem and its O(n+F) frontier-space bound remain H-specific. G has an independent disjoint block-partition argument and no claimed linear worst-case pending-heap bound. Standard rows/heaps/diagonal inequalities are not standalone novelty. General finite catalogs retain D; arbitrary weights/filters need their own coverage mechanism."
+    },
+    {
+      "id": "C3",
+      "claim": "Integrate version transfer, directional intervals, checked equality and supported cost planning under the shared contract, and evaluate complete service costs with explicitly scoped independent checks and completion limits.",
+      "paragraphs": [
+        "I6",
+        "I7",
+        "R2",
+        "N1",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N8",
+        "X1a",
+        "X2",
+        "X3",
+        "X4",
+        "E4a",
+        "HG1",
+        "E15",
+        "E18",
+        "E18a",
+        "E19"
+      ],
+      "sections": [
+        "sec:responses",
+        "sec:numerics",
+        "sec:execution",
+        "sec:evaluation",
+        "sec:completion",
+        "app:arithmetic"
+      ],
+      "formal_objects": [
+        "lem:woodbury",
+        "thm:pivot",
+        "thm:directional",
+        "thm:normwise",
+        "thm:finite",
+        "prop:equality",
+        "eq:planner",
+        "eq:checker-energy"
+      ],
+      "algorithm": "alg:service",
+      "tables_figures": [
+        "tab:evidence_scope",
+        "fig:hg_costs",
+        "tab:hg_work",
+        "tab:directional",
+        "tab:verification"
+      ],
+      "evidence_ids": [
+        "E-old-manuscript-evaluation",
+        "E-directional-table",
+        "E-V2-aggregate",
+        "E-V2-alpha-replay",
+        "E-V2-otc-replay",
+        "E-V3-alpha",
+        "E-V4-summary",
+        "E-V4-invariance",
+        "E-Slashdot-worker",
+        "E-freeze-G-derived"
+      ],
+      "scope": "Primary all-root-nonedge requests use fixed dyadic directional maintenance, root reset and empty request Grams; historical adaptive/planner experiments are separate. V4 recorded agreement is not numerical replay. G has lower measured aggregate cost; retaining H/light_v1 is a conservative switching decision, not an H performance-superiority claim."
+    }
+  ],
+  "formal_claim_conditions": [
+    {
+      "label": "prop:revival",
+      "conditions": [
+        "three-node negative path",
+        "unit edge weights",
+        "alpha=1",
+        "s=(1,-3/10,-1/2)",
+        "catalog has exactly two flips"
+      ],
+      "proof": "Four exact quadratic energies in sections/02_contract.tex.",
+      "excludes": [
+        "frequency of revival in natural opinions",
+        "multi-step optimality"
+      ]
+    },
+    {
+      "label": "thm:coverage",
+      "conditions": [
+        "fixed root catalog",
+        "uniform positive insertion weight",
+        "all root nonedges eligible",
+        "negative root edges explicit with their own magnitudes",
+        "chosen IDs excluded",
+        "current certified center and radius",
+        "current certificates for processed skips",
+        "current frontier rebuilt after each commit"
+      ],
+      "proof": "Monotone insertion rows plus sparse flip head, safe removal cases, and induction in sections/04_coverage.tex.",
+      "excludes": [
+        "stale caps treated as current",
+        "arbitrary pair restrictions without additional enumeration proof",
+        "universal low traversal work",
+        "G proof follows from a distinct block partition, not the row-frontier theorem",
+        "universal necessity to reconstruct all coverage from scratch"
+      ],
+      "access_path": "H only"
+    },
+    {
+      "label": "thm:finite",
+      "conditions": [
+        "bounded opinions",
+        "finite nonempty catalog with finite complete access",
+        "at most b legal single-edit commits",
+        "delta>0",
+        "support-preserving endpoint basis assembly",
+        "every named true residual/input/complete arithmetic allowance certified <=epsilon in its stated norm",
+        "epsilon satisfies eq:finite-eps",
+        "winner pivots formed from current certified transition-response blocks",
+        "unseen candidates not discharged by current cuts are finitely scored before the narrow-interval decision argument"
+      ],
+      "proof": "Full initialization, inverse-trial bound, one-step transport, finite induction, finite-coverage decision, and block charge in sections/10_appendix.tex.",
+      "conclusion": "A conditional policy needs at most N+b response blocks and no inherited-view numerical reanchors.",
+      "excludes": [
+        "delta=0 completion",
+        "claim primary binary64/dyadic run satisfies a priori premise",
+        "N below catalog size",
+        "all service cost bounded by N+b"
+      ]
+    },
+    {
+      "label": "prop:equality",
+      "conditions": [
+        "two current legal children",
+        "exact child conjugacy",
+        "exact opinion invariance"
+      ],
+      "runtime_additional_checks": [
+        "parent invariance",
+        "current parent version and digests",
+        "edit kind and integer magnitude",
+        "units",
+        "chosen exclusion",
+        "all unresolved competing candidates",
+        "canonical order",
+        "strictly positive gain evidence",
+        "actual canonical winner response"
+      ],
+      "proof": "Permutation orthogonality and equal child quadratic forms in sections/05_numerics.tex.",
+      "excludes": [
+        "floating score closeness implies equality",
+        "manufactured point interval",
+        "general graph isomorphism",
+        "automatic discharge of unseen earlier or stronger rivals"
+      ],
+      "runtime_scope": "Shared online restricted resolver across D/S/H/G. The offline V3 two-transposition Alpha witness explains a pair but is not an online resolver modification."
+    },
+    {
+      "label": "eq:block-insertion",
+      "type": "existing G mechanism argument; no new theorem claimed",
+      "conditions": [
+        "current physical operator diagonal",
+        "legal current nonedge insertion",
+        "uniform positive insertion weight",
+        "outward state-difference bound",
+        "nonnegative certified current-diagonal reciprocal lower bounds; denominator >=1",
+        "complete disjoint triangular/rectangular partition",
+        "current legality and processed-candidate evidence",
+        "remaining flips separately covered",
+        "strict cuts retain positive equal-gain canonical competitors"
+      ],
+      "source_ids": [
+        "E-V3-G-coverage",
+        "E-V3-G-checks"
+      ],
+      "paragraphs": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "excludes": [
+        "applying insertion bound to rank-two flips",
+        "using H frontier as G proof or fallback",
+        "linear worst-case pending block heap",
+        "all pairs independently numerically replayed in V4"
+      ]
+    }
+  ],
+  "empirical_claims": [
+    {
+      "id": "E-old-complete-cost",
+      "status": "audited_retained_data",
+      "location": [
+        "fig:costs left panel",
+        "sec:evaluation RQ1"
+      ],
+      "population": {
+        "cells": 12,
+        "repeats_per_method": 3,
+        "methods": 3,
+        "workers": 108,
+        "distinct_opinions": 48,
+        "request_executions": 432,
+        "commits": 6480
+      },
+      "measure": "Complete structural setup plus Q4, prefixes.4; ratio of sums across matched complete blocks.",
+      "totals_seconds": {
+        "D": 435.63589438901545,
+        "S": 1732.4551205220014,
+        "H": 121.47893757598649
+      },
+      "ratios": {
+        "D_over_H": 3.5861022748616,
+        "S_over_H": 14.26136213480078
+      },
+      "scope": "Diagnosed fixed-input revision retest on 12 archived streams / 48 opinions. Original confirmation remains failed. Complete cost ratios use its own matched population. Repeat ranges are not confidence intervals.",
+      "evidence_ids": [
+        "E-old-cell-methods",
+        "E-old-cells",
+        "E-old-summary",
+        "E-old-failure"
+      ],
+      "measurement_policy": "original instrumented reporting; not light_v1",
+      "paragraphs": [
+        "E5"
+      ],
+      "current_editorial_status": "ratios and completion remain at E5/E6; detailed historical counts/times retained in frozen record"
+    },
+    {
+      "id": "E-old-work-space",
+      "status": "audited_retained_data",
+      "location": "sections/07_evaluation.tex E7",
+      "measure": "Per-graph mean work per Q4; median and min/max process-peak RSS across all 18 workers.",
+      "scope": "Separate emissions, pops, endpoint rows, Grams, blocks and RHS; H pays 60 reached-version builds per complete Q4; process memory is not frontier-only storage.",
+      "evidence_ids": [
+        "E-old-work"
+      ]
+    },
+    {
+      "id": "E-V2-after-freeze-confirmation",
+      "status": "retained_original_after_freeze_confirmation",
+      "location": [
+        "fig:costs right panel",
+        "sections/evaluation_unseen.tex"
+      ],
+      "planned_population": {
+        "cells": 6,
+        "workers": 54,
+        "distinct_opinions": 24,
+        "request_executions": 216,
+        "maximum_commits": 3240
+      },
+      "scope": "Six streams were generated after the V2 implementation freeze and are already observed development/regression inputs in V3/V4. Five complete cells and 15/18 matched repeats support original D/H and S/H costs. Nine Alpha q1 observations share one unresolved fourth comparison after three accepts; q2-q4 finish. V3 classifies the specified pair exact_equal, but full_decision_verified remains false and the online decision remains unresolved. Partial work is never a complete-Q4 cost.",
+      "observed_population": {
+        "whole_complete_cells": 5,
+        "planned_cells": 6,
+        "complete_Q4_workers": 45,
+        "planned_workers": 54,
+        "completed_request_executions": 207,
+        "planned_request_executions": 216,
+        "accepted_decisions": 3132,
+        "unresolved_workers": 9,
+        "timeout_or_memory_or_runtime_errors": 0
+      },
+      "matched_complete_repeat_pairs": 15,
+      "planned_repeat_pairs": 18,
+      "complete_service_totals_seconds": {
+        "D": 211.01984770500349,
+        "S": 787.4625900870051,
+        "H": 55.62411935000091
+      },
+      "restricted_ratios": {
+        "D_over_H": 3.7936753007668074,
+        "S_over_H": 14.156854963079828
+      },
+      "actual_recorded_work_including_partial_seconds": {
+        "D": 231.82483247000891,
+        "S": 853.857518831006,
+        "H": 62.42802337000103
+      },
+      "measurement_policy": "original instrumented reporting; not light_v1",
+      "evidence_ids": [
+        "E-V2-freeze",
+        "E-V2-seed",
+        "E-V2-protocol",
+        "E-V2-aggregate"
+      ]
+    },
+    {
+      "id": "E-Slashdot-boundary",
+      "status": "bounded_run_observed_root_factorization_timeout",
+      "location": "sections/evaluation_scale.tex S1-S2",
+      "domain": {
+        "n": 82140,
+        "m": 498532,
+        "negative_edges": 117599,
+        "logical_candidates": 3373067797,
+        "weights": "unit signed root; insertion1/16"
+      },
+      "preflight": "D mandatory candidate payload53.404GiB exceeds declared4GiB address-space cap; no D service run is inferred.",
+      "scope": "Original V2 exact D representation is not started after memory/ordinal preflight. Shared SuperLU root factorization times out before state solve, frontier preparation or any request begins. No full service, finite speed ratio, decision or full-domain numerical check is established at this scale.",
+      "observed": {
+        "D_status": "not_started_memory_preflight",
+        "D_minimum_payload_bytes": 57342152549,
+        "B1_status": "timeout",
+        "B1_phase": "SuperLU root factorization",
+        "B1_wall_seconds": 600.1059425960011,
+        "external_sampled_peak_rss_bytes": 2539933696,
+        "external_sampled_peak_vms_bytes": 3443089408,
+        "address_space_limit_bytes": 4294967296,
+        "completed_requests": 0,
+        "H_S_Q1_Q4_status": "not_run_gate_failed",
+        "request_started": false
+      },
+      "evidence_ids": [
+        "E-Slashdot-stage",
+        "E-Slashdot-worker",
+        "E-Slashdot-bookkeeping"
+      ]
+    },
+    {
+      "id": "E-historical-maintenance",
+      "status": "retained_original_domain",
+      "location": "sections/07_evaluation.tex E9-E10",
+      "scope": "Retained original Windows six-graph, supplied finite-catalog, unit-edit, delta=1e-9 study with ten repetitions. Matched cold/cache/plan comparisons stay within backend. Original V2 source retains its complete historical table. No new timings or uniform enablement of planner in primary H/G is inferred.",
+      "evidence_ids": [
+        "E-old-manuscript-evaluation"
+      ]
+    },
+    {
+      "id": "E-directional",
+      "status": "retained_event_reaggregation",
+      "location": "tab:directional",
+      "population": {
+        "weight_groups": 8,
+        "tolerance_runs": 20,
+        "uniquely_paired_events": 41744,
+        "invalid_ratios": 0,
+        "zero_denominators": 0
+      },
+      "measures": {
+        "same_state_formula": "same_state_old/completed",
+        "maintained_history_policy": "baseline_radius/radius"
+      },
+      "scope": "Eight groups and 41,744 uniquely paired retained events. Same-state and separate-maintained-history ratios differ; each formula retains its own center. This field audit does not reconstruct every unrecorded matrix/residual operand.",
+      "evidence_ids": [
+        "E-directional-table",
+        "E-directional-report"
+      ]
+    },
+    {
+      "id": "E-independent-checks",
+      "status": "audited_retained_reports",
+      "location": "tab:verification",
+      "scopes": [
+        "10 fixed requests150 full-domain decisions",
+        "1 actual timedOTC request15 full-domain decisions",
+        "432 timed chains6480 parent states90 witness observations10 unique relations",
+        "5769 original accepted decisions exactly preserved"
+      ],
+      "excludes": [
+        "all432 requests independently full-domain numerically certified",
+        "overlapping reported populations summed as independent samples",
+        "large-graph interval intersection establishes full published-interval enclosure"
+      ],
+      "evidence_ids": [
+        "E-old-fixed-replay",
+        "E-old-timed-replay",
+        "E-old-structural",
+        "E-old-audit"
+      ]
+    },
+    {
+      "id": "E-V2-independent-checks",
+      "status": "full_selected_request_verified_and_structural_replay_verified",
+      "location": "sec:evaluation RQ4",
+      "structural_scope": {
+        "request_chains": 216,
+        "parent_states_including_terminal": 3141,
+        "witness_observations": 54,
+        "unique_relations": 6
+      },
+      "determinism_scope": {
+        "distinct_opinions": 24,
+        "exposures_each": 9,
+        "identical_accepted_id_version_sequences": 24,
+        "paired_decision_interval_comparisons": 12528,
+        "comparisons_with_differing_numeric_endpoints": 36
+      },
+      "preselected_full_replay": [
+        {
+          "graph": "Alpha",
+          "method": "H",
+          "repeat": 0,
+          "stream": "independent",
+          "request": 1,
+          "certified_decisions": 15,
+          "candidate_decision_rows": 107113155,
+          "independent_rhs": 48,
+          "checker_seconds": 6.211483897
+        },
+        {
+          "graph": "OTC",
+          "method": "H",
+          "repeat": 0,
+          "stream": "independent",
+          "request": 1,
+          "certified_decisions": 15,
+          "candidate_decision_rows": 259077780,
+          "independent_rhs": 44,
+          "checker_seconds": 13.064212393
+        }
+      ],
+      "scope": "Two protocol-selected H/r0/independent/q1 requests, 15 full-domain decisions each, no replacement or trimming. Actual winners and all rivals independently checked, not all 216 executions. Published large-graph interval intersections establish consistency only. V4 adds zero real-data full-domain numerical replays.",
+      "evidence_ids": [
+        "E-V2-structural",
+        "E-V2-alpha-replay",
+        "E-V2-otc-replay",
+        "E-V2-aggregate",
+        "E-V2-protocol"
+      ]
+    },
+    {
+      "id": "E-V3-HG-original-policy",
+      "status": "retained_implementation_observation",
+      "paragraphs": [],
+      "evidence_ids": [
+        "E-V3-HG",
+        "E-V3-profile"
+      ],
+      "population": {
+        "old_streams": 6,
+        "formal_workers": 12,
+        "complete_Q4_workers": 10,
+        "complete_pairs": 5,
+        "formal_repeats_per_method": 1
+      },
+      "totals_seconds": {
+        "H": 17.466908506000436,
+        "G": 7.256283951000114
+      },
+      "H_over_G": 2.407142364321757,
+      "scope": "Method-dependent deep reporting is included. The one Alpha/slow profile is not a correction for all five cells, an instrumentation-free rerun, or an isolated coverage-algorithm gain.",
+      "current_editorial_status": "archived background; old ratio removed from main text",
+      "location": "editorial/frozen_baseline/CLAIM_EVIDENCE_MAP.json and FULL_TEXT_EDIT.patch"
+    },
+    {
+      "id": "E-V4-HG-light",
+      "status": "sealed_paired_measurements",
+      "paragraphs": [
+        "HG1",
+        "E8"
+      ],
+      "tables_figures": [
+        "fig:hg_costs",
+        "tab:hg_work"
+      ],
+      "evidence_ids": [
+        "E-V4-summary",
+        "E-V4-figure",
+        "E-V4-pairs",
+        "E-V4-formal-freeze"
+      ],
+      "population": {
+        "independent_streams": 6,
+        "new_streams": 0,
+        "workers": 36,
+        "complete_Q4_workers": 30,
+        "unresolved_workers": 6,
+        "request_executions": 144,
+        "completed_requests": 138,
+        "accepted_observations": 2088,
+        "complete_pairs": 15,
+        "partial_pairs": 3
+      },
+      "measurement_policy": "light_v1",
+      "service_seconds": {
+        "H": 21.537745645999166,
+        "G": 18.833572476007248
+      },
+      "H_over_G": 1.143582592916817,
+      "G_time_reduction_percent": 12.55550703605901,
+      "G_faster_pairs": 14,
+      "G_favorable_cell_medians": 5,
+      "cell_results": [
+        {
+          "graph": "Alpha",
+          "stream": "independent",
+          "paired_H_over_G": [
+            1.2458827560348404,
+            1.3717258126777057,
+            1.1396013415454396
+          ],
+          "median_H_over_G": 1.2458827560348404
+        },
+        {
+          "graph": "Alpha",
+          "stream": "slow",
+          "paired_H_over_G": [
+            1.2830920144177644,
+            1.2257015962372273,
+            1.2878026435718084
+          ],
+          "median_H_over_G": 1.2830920144177644
+        },
+        {
+          "graph": "OTC",
+          "stream": "independent",
+          "paired_H_over_G": [
+            1.1369434783313084,
+            1.1582896160225231,
+            1.2256817120998815
+          ],
+          "median_H_over_G": 1.1582896160225231
+        },
+        {
+          "graph": "OTC",
+          "stream": "signed-neighbor",
+          "paired_H_over_G": [
+            0.8407248608333784,
+            1.0967766827131535,
+            1.1503957173445791
+          ],
+          "median_H_over_G": 1.0967766827131535
+        },
+        {
+          "graph": "OTC",
+          "stream": "slow",
+          "paired_H_over_G": [
+            1.102615847176568,
+            1.2053053284870512,
+            1.153530487612008
+          ],
+          "median_H_over_G": 1.153530487612008
+        }
+      ],
+      "repeat_aggregates": [
+        {
+          "repeat_id": 0,
+          "H": 7.085862720001387,
+          "G": 6.655045376011913,
+          "H_over_G": 1.0647354480169817
+        },
+        {
+          "repeat_id": 1,
+          "H": 7.303407834995596,
+          "G": 6.149647413994899,
+          "H_over_G": 1.1876140766013767
+        },
+        {
+          "repeat_id": 2,
+          "H": 7.148475091002183,
+          "G": 6.028879686000437,
+          "H_over_G": 1.1857053819802608
+        }
+      ],
+      "scope": "All six streams are previously observed V2 inputs. G has lower measured aggregate service cost; independent input count remains six. Partial Alpha services are excluded only from complete-Q4 ratios and remain in all-run denominators. No significance or fresh-input generalization claim; no cross-policy multiplication with D/H or S/H."
+    },
+    {
+      "id": "E-V4-observation-invariance",
+      "status": "retained_archive_gates_passed",
+      "paragraphs": [
+        "E4a"
+      ],
+      "evidence_ids": [
+        "E-V4-invariance",
+        "E-V4-gate0",
+        "E-V4-gate1",
+        "E-V4-gate2"
+      ],
+      "diagnostic_workers": 4,
+      "formal_repeat_gates": 3,
+      "scope": "Same-method retained decisions, integer intervals, versions, energies and numerical/access/cache counts; diagnostic-only request-end cache/factor content digests. Not every intermediate internal state or all local sets. No fresh numerical replay of real-data certificates."
+    },
+    {
+      "id": "E-Alpha-structural-equality",
+      "status": "retained_offline_classification",
+      "paragraphs": [
+        "U2",
+        "E19"
+      ],
+      "evidence_ids": [
+        "E-V3-alpha",
+        "E-V4-summary"
+      ],
+      "classification": "exact_equal",
+      "specified_candidates": [
+        7073654,
+        12373891
+      ],
+      "permutation": [
+        [
+          1869,
+          3270
+        ],
+        [
+          3227,
+          3481
+        ]
+      ],
+      "full_decision_verified": false,
+      "online_resolver_changed": false,
+      "online_q1_status": "unresolved after three accepted edits at the fourth comparison",
+      "scope": "Exact integer parent/opinion/child equalities establish this pair relation. Strict positivity, every current competitor and the global canonical winner have not all been independently proved. Repeated observations remain one physical input state."
+    },
+    {
+      "id": "E-G-archived-mechanisms",
+      "status": "archive_only_recomputed",
+      "paragraphs": [
+        "E8a"
+      ],
+      "location": "tab:g_mechanism",
+      "population": {
+        "complete_streams": 5,
+        "distinct_complete_states": 300,
+        "all_streams": 6,
+        "all_distinct_states": 349,
+        "all_accepted_states": 348,
+        "all_unresolved_states": 1,
+        "repeats_per_state": 3
+      },
+      "complete_state_counts": {
+        "whole_insertion_class_excluded": 132,
+        "block_access_entered": 168,
+        "flip_winner": 198,
+        "insertion_winner": 102,
+        "flip_winner_after_block_access": 66
+      },
+      "all_state_counts": {
+        "whole_insertion_class_excluded": 157,
+        "block_access_entered": 192,
+        "flip_winner": 230,
+        "insertion_winner": 118,
+        "unresolved": 1
+      },
+      "unit": "correlated trajectory states, not independent inputs",
+      "scope": "Observed execution flags are disjoint/exhaustive in this batch only; source_complete is not decision certification. No single-bound causal time attribution.",
+      "evidence_ids": [
+        "E-freeze-review-audit",
+        "E-freeze-mechanisms",
+        "E-freeze-mechanism-table"
+      ]
+    },
+    {
+      "id": "E-G-static-cap-comparison",
+      "status": "archive_only_static_same_threshold_comparison",
+      "location": "artifact / ARCHIVE_EVIDENCE_NOTES.md",
+      "complete_states": 300,
+      "constant_cap_excludes": 32,
+      "combined_cap_excludes": 132,
+      "additional_states_at_same_stored_threshold": 100,
+      "all_states_counts": {
+        "states": 349,
+        "constant": 35,
+        "combined": 157
+      },
+      "threshold": "recorded cold_end_lower_fine, strict integer/physical-equivalent test",
+      "scope": "Not a counterfactual run or an ablation; no complete incumbent-call history; no speedup or completion prediction.",
+      "evidence_ids": [
+        "E-freeze-review-audit",
+        "E-freeze-mechanisms"
+      ],
+      "current_editorial_status": "artifact-only retained evidence, not a new main-text causal claim"
+    },
+    {
+      "id": "E-G-derived-output-check",
+      "status": "archive_bound_derived_check_using_existing_H_replay",
+      "paragraphs": [
+        "E18a"
+      ],
+      "location": "tab:verification",
+      "distinct_states": 30,
+      "G_observations": 90,
+      "G_request_executions": 6,
+      "original_H_preselected_requests": 2,
+      "new_full_catalog_replays": 0,
+      "H_G_union_independent_states": 30,
+      "result": "Archived independent gain enclosure subset of G published interval, by exact Fraction comparison; positive lower gains",
+      "binding": "Original V2 worker/input/source/native bytes and recorded parent/edit/child/winner chain directly matched to G; V3 intermediary agrees.",
+      "scope": "No new physical parent reconstruction, residual/competitor numerical replay, or independent check of every G block prune; original H evidence reused.",
+      "evidence_ids": [
+        "E-V2-alpha-replay",
+        "E-V2-otc-replay",
+        "E-freeze-G-derived"
+      ]
+    }
+  ],
+  "implementation_selection": {
+    "original_quantified_G_base_conditions_passed": true,
+    "original_conditions": {
+      "aggregate_min": 1.1,
+      "positive_cell_medians_min": 4,
+      "cell_median_min": 0.9,
+      "semantics_resources_and_all_fifteen_pairs_required": true
+    },
+    "original_qualitative_clause": "An advantage below 10%, mixed directions, or variability crossing the above selection thresholds",
+    "additional_execution_condition": {
+      "every_repeat_aggregate_min": 1.1,
+      "passed": false
+    },
+    "additional_condition_changed_decision": true,
+    "first_archived_freeze_utc": "2026-11-26T06:10:13.615435+00:00",
+    "first_diagnostic_start_utc": "2026-11-26T06:11:02.688884+00:00",
+    "formal_freeze_utc": "2026-11-26T06:28:03.541523+00:00",
+    "first_formal_start_utc": "2026-11-26T06:28:03.906362+00:00",
+    "public_preregistration_or_independent_timestamp_claim": false,
+    "recommended_configuration": "A2Session(W, \"H\", measurement_policy=\"light_v1\")",
+    "constructor_default_remains": "legacy_deep",
+    "H_performance_superiority_claim": false,
+    "stage_decision": "retain H/light_v1; G remains independent strong baseline and available alternative; end method-selection experiments",
+    "manuscript_location": "review/NARRATIVE_SCOPE_DETAILS_20261127.txt, section 2; engineering rule removed from the main narrative"
+  },
+  "source_registry": {
+    "S-source-archive": {
+      "scope": "workspace",
+      "path": "upload/J_CERT_Plus_PVLDB_Source_20261126(2).zip",
+      "bytes": 9471118,
+      "sha256": "1fed7ed8013f77174d782f02d648d61ecc262eb06593091b7ec560e098e4deed",
+      "role": "Historical V2 source baseline identity inherited from the frozen map; not the source uploaded or accessed in this session."
+    },
+    "S-original-R15-log": {
+      "scope": "paper",
+      "path": "R15_CUT_MERGE_LOG_ZH.txt",
+      "bytes": 5121,
+      "sha256": "7a94220791242508fc4b82e3de9442278ea78b3b9683c60bec2387282e7ee6ec",
+      "role": "Historical R15-to-V2 cut/merge rationale; not rewritten as a V4 execution log"
+    },
+    "S-template": {
+      "scope": "paper",
+      "path": "template_source/provenance.json",
+      "bytes": 1318,
+      "sha256": "665c5577a1a192598d99844a7fa215af2e89606d11fba6dd6ac104b9dcd406f4",
+      "role": "Original official template URLs and member hashes"
+    },
+    "E-old-cell-methods": {
+      "scope": "paper",
+      "path": "review/a2_tie_cell_methods.csv",
+      "bytes": 29107,
+      "sha256": "446121c892e75af4cc453881db5d8cf31e5a3ae9c0fb26c25f5d62bc293c6231",
+      "role": "Portable fixed-retest figure input"
+    },
+    "E-old-cells": {
+      "scope": "paper",
+      "path": "review/a2_tie_cells.csv",
+      "bytes": 20513,
+      "sha256": "6b34c3cfebf0ff3ba9fe712155315eab1ec2a4d1e9941c64e408e1255c0033db",
+      "role": "Portable fixed-retest paired-cell aggregation"
+    },
+    "E-old-work": {
+      "scope": "paper",
+      "path": "review/a2_graph_method_work.csv",
+      "bytes": 2256,
+      "sha256": "3d84b2b25150207c52db98e237da9b4c1f6939c1d148702c148f5ddf03342362",
+      "role": "Portable fixed-retest work and memory aggregation"
+    },
+    "E-old-summary": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/reports/A2_TIE_RETEST_SUMMARY.json",
+      "bytes": 3816772,
+      "sha256": "1b62a4e0cb8d24cb71f192937ce45208907558ff7b3cb32fc07673fe3835e6a7",
+      "role": "Original diagnosed fixed-input retest summary"
+    },
+    "E-old-failure": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/reports/A2_CONFIRMATION_JUDGMENT.json",
+      "bytes": 8698,
+      "sha256": "fa055ffc18b3b93b1972ca7896feee1462633805d7deb55e9b711aba4d529e77",
+      "role": "Original confirmation remains failed"
+    },
+    "E-old-fixed-replay": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/reports/TIE_FIXED_INDEPENDENT_VERIFICATION.json",
+      "bytes": 199378,
+      "sha256": "6ead05d0c93286fb3eb6f93729ea4abb5cacde92375f09d6d5eda1bd2894e3bf",
+      "role": "Ten fixed requests / 150 full-domain checked decisions"
+    },
+    "E-old-timed-replay": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/reports/TIE_TIMED_OTC_FULL_REPLAY.json",
+      "bytes": 78768,
+      "sha256": "8bc80c15971ffa26be149096f18c0c7f4da97aa556c1ad7d2f2b67b3eabf27e0",
+      "role": "Selected actual timed OTC request / 15 full-domain decisions"
+    },
+    "E-old-structural": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/reports/TIE_TIMED_WITNESS_VERIFICATION.json",
+      "bytes": 4457492,
+      "sha256": "73af9d9600fff73e5f9c2460eace5d28294a939ecfa7fa754a817e3455da91a8",
+      "role": "Timed parent and structural-witness checks"
+    },
+    "E-old-audit": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/audit/evidence_audit.json",
+      "bytes": 989565,
+      "sha256": "c129157f04fd35d6b08916890d3309d67e8a95f696f05fbd809339eefcfb23c5",
+      "role": "Retained aggregation and scope audit"
+    },
+    "E-old-manuscript-evaluation": {
+      "scope": "workspace",
+      "path": "v2_received/paper/paper/sections/07_evaluation.tex",
+      "bytes": 18012,
+      "sha256": "40006b75bddee5d0c514420e69a7ae0d510c252d5ea49b93c90e3f2306c4c57c",
+      "role": "Exact retained V2 text for historical maintenance values and scope"
+    },
+    "E-directional-table": {
+      "scope": "paper",
+      "path": "review/directional_groups.csv",
+      "bytes": 2849,
+      "sha256": "68c534615095a4ecc7d04050eb4bec9f6d8d6bbee45c8fabeb22e88ce430d978",
+      "role": "Eight groups / 41,744 retained matched events; same-state and policy-history fields separate"
+    },
+    "E-directional-report": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/baseline_r15/experimental_records/evidence_supplement_20261124/evidence/directional/REPORT.txt",
+      "bytes": 10321,
+      "sha256": "e9712591b0f6dce4fc93d128123ee88360655d492215a1c506023216d0b75cf8",
+      "role": "Original directional reaggregation report"
+    },
+    "E-V2-freeze": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/v2/CODE_FREEZE.json",
+      "bytes": 17486,
+      "sha256": "536a87dd8a28ebb0e2523dea5de9eb9e3c29056feeeedd98edeaf9adb67f00b5",
+      "role": "Actual V2 implementation freeze before new inputs"
+    },
+    "E-V2-seed": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/v2/SEED_DRAW.json",
+      "bytes": 4583,
+      "sha256": "92ea28429941c172eeb7ee9fbe0bb8e8dd20c4ee8fee98b9ae170d3d69ae2a9e",
+      "role": "Original one-time V2 seed draw after code freeze"
+    },
+    "E-V2-protocol": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/v2/PROTOCOL.json",
+      "bytes": 2720,
+      "sha256": "b846b2a8eec9805e8fa9dc788eae8b146463cc9c18636da935a7716e9674b810",
+      "role": "V2 matched roster, contract, resources and preselected replay requests"
+    },
+    "E-V2-aggregate": {
+      "scope": "paper",
+      "path": "review/a_aggregate.json",
+      "bytes": 2286305,
+      "sha256": "2b466470076496a9fdb574f9820241b1aba93f8ec77b80b157729ddeef085f11",
+      "role": "Portable retained V2 full 54-worker aggregation, identical to original evidence"
+    },
+    "E-V2-alpha-replay": {
+      "scope": "paper",
+      "path": "review/a_full_catalog_Alpha.json",
+      "bytes": 76534,
+      "sha256": "6f4f2b386a1227ee5bf8c79a108b9e39efbeeaea5af786cc48e10681b4917741",
+      "role": "Original preselected Alpha H/r0/independent/q1 full-domain replay"
+    },
+    "E-V2-otc-replay": {
+      "scope": "paper",
+      "path": "review/a_full_catalog_OTC.json",
+      "bytes": 76593,
+      "sha256": "379793e926522e00bb31fc599cf880710f79c0b8f29bdc9607231a4b66469719",
+      "role": "Original preselected OTC H/r0/independent/q1 full-domain replay"
+    },
+    "E-V2-structural": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/validation/a_parent_witness.json",
+      "bytes": 2276335,
+      "sha256": "4d1c7c4f66123685b27863bd517798ca6400519bd0e46745e82f2541a0bd9193",
+      "role": "216 chains, 3,141 parents and 54 structural witness observations"
+    },
+    "E-Slashdot-stage": {
+      "scope": "paper",
+      "path": "review/Slashdot_STAGE_RESULTS.json",
+      "bytes": 2136,
+      "sha256": "a85a7310e22092d19ab97e85814df243c9d12be4bc6ba57be36ebbeff20be219",
+      "role": "Original stages and D memory preflight"
+    },
+    "E-Slashdot-worker": {
+      "scope": "workspace",
+      "path": "v2_received/evidence/v2/raw_b/000_Slashdot_independent_H_r0.json",
+      "bytes": 19811,
+      "sha256": "def32a4bec36da26b3db7f4d66a62dd1004c6cf24ffbc95e65d43671c8aa022d",
+      "role": "Original root-factorization timeout and sampled resources"
+    },
+    "E-Slashdot-bookkeeping": {
+      "scope": "paper",
+      "path": "review/b_bookkeeping.json",
+      "bytes": 6529,
+      "sha256": "8ecaec55e7644b38dd58a2b73569579d3414fdb145a4228dd152f338c78f8c8a",
+      "role": "Original root-gate status and accounting check"
+    },
+    "E-V3-G-coverage": {
+      "scope": "workspace",
+      "path": "v3/resumed/reports/G_COVERAGE_NOTE.md",
+      "bytes": 3248,
+      "sha256": "1d09d5c7cf59f46df0f1e460171801b1e35c3f76775a068b3f492d19f1038272",
+      "role": "Independent flip-first triangular/rectangular block coverage and limitations"
+    },
+    "E-V3-G-checks": {
+      "scope": "workspace",
+      "path": "v3/resumed/reports/g_mechanism_checks.json",
+      "bytes": 72024,
+      "sha256": "08adbb37322f82156ed1233e9040ab9f13b7d018c6af9202eb769c2c012dea6a",
+      "role": "Retained G mechanism verification; not rerun in editorial work"
+    },
+    "E-V3-alpha": {
+      "scope": "workspace",
+      "path": "v3/resumed/reports/alpha_classification_report.json",
+      "bytes": 8259,
+      "sha256": "b245190038fc093c170be8eb6b5ce47bb40887208ae9bd411f9c957b3f46d7e8",
+      "role": "Exact specified-candidate equality; full_decision_verified=false"
+    },
+    "E-V3-HG": {
+      "scope": "workspace",
+      "path": "v3/resumed/reports/hg_verified/hg_summary.json",
+      "bytes": 21226,
+      "sha256": "0dadeebc7cc0ef093e190410d74fb4f7737b52ed2f13d6b3b262b709792f7a5a",
+      "role": "Original one-repeat H/G result under legacy deep reporting"
+    },
+    "E-V3-profile": {
+      "scope": "workspace",
+      "path": "v3/resumed/reports/memory_accounting_profile.json",
+      "bytes": 670762,
+      "sha256": "de1e87ddeca44650b03aedd6acf8da2fae8ffdc81d299a8d3701526cb99519cc",
+      "role": "Single Alpha/slow report-cost diagnostic; no corrected algorithmic ratio"
+    },
+    "E-V4-original-plan": {
+      "scope": "workspace",
+      "path": "v4/spec/V4_USER_PLAN.md",
+      "bytes": 23336,
+      "sha256": "1346c44b79253e5bf543e8aae42365b597cb1951b28c2f70c847534a2b592e74",
+      "role": "Original aggregate/per-cell numerical switching conditions and qualitative fluctuation clause"
+    },
+    "E-V4-diagnostic-freeze": {
+      "scope": "workspace",
+      "path": "v4/protocols/INVARIANCE.json",
+      "bytes": 44574,
+      "sha256": "cbbc248f1e4df03875170bfd85068a4bd25a802e9844375b03ef07ab1994c3e4",
+      "role": "Earliest archived added repeat guard, before diagnostic timing"
+    },
+    "E-V4-formal-freeze": {
+      "scope": "workspace",
+      "path": "v4/protocols/HG_LIGHT_FROZEN.json",
+      "bytes": 54915,
+      "sha256": "2f1fca19129e2ed0f8032954e0d1175f7c776607399ed85dc2e6904085b57887",
+      "role": "All 36 formal jobs, policy and added repeat guard frozen before formal timing"
+    },
+    "E-V4-invariance": {
+      "scope": "workspace",
+      "path": "v4/reports/semantic_invariance.json",
+      "bytes": 8283,
+      "sha256": "022ac04f7290d2df3a7be32713324acdde778181bf70596f2116790482559583",
+      "role": "Four diagnostic workers, exact same-method recorded comparison plus request-end digests"
+    },
+    "E-V4-gate0": {
+      "scope": "workspace",
+      "path": "v4/reports/formal_repeat_0.json",
+      "bytes": 14551,
+      "sha256": "6827b2031b46e3d5e015e2fe5dc9eeab89f4b176ff94c11102bd45df85bc83f0",
+      "role": "First formal repeat recorded-semantic gate"
+    },
+    "E-V4-gate1": {
+      "scope": "workspace",
+      "path": "v4/reports/formal_repeat_1.json",
+      "bytes": 14551,
+      "sha256": "6883a03f49c5d7b390c8dd8b5125d4386d3b41c0650a9edce4f4f78354027e48",
+      "role": "Second formal repeat recorded-semantic gate"
+    },
+    "E-V4-gate2": {
+      "scope": "workspace",
+      "path": "v4/reports/formal_repeat_2.json",
+      "bytes": 14551,
+      "sha256": "5247f1df945bf9bc882a103cf8952fc8f34336f97085d688b9e8f6d90987ea53",
+      "role": "Third formal repeat recorded-semantic gate"
+    },
+    "E-V4-summary": {
+      "scope": "workspace",
+      "path": "v4/reports/hg_light_summary.json",
+      "bytes": 94363,
+      "sha256": "765353ee62c30bb22e6abdc680b35158a3c1744af55f1864b75f21c8a629bf22",
+      "role": "V4 matched H/G full and partial records, counters, phases and decision rule"
+    },
+    "E-V4-budget": {
+      "scope": "workspace",
+      "path": "v4/budget_ledger.jsonl",
+      "bytes": 1275723,
+      "sha256": "2c0742773ae200d75a938ab6f10782727cfcae5b3a1484f8d51166498627f6fb",
+      "role": "Complete V4 charged-process ledger, including intentional RED attempts"
+    },
+    "E-V4-config": {
+      "scope": "workspace",
+      "path": "v4/RECOMMENDED_CONFIGURATION.json",
+      "bytes": 1083,
+      "sha256": "89925c7dd189c67025ca6a2a295f31dd645d55a247cb4037c339337f743809a0",
+      "role": "Explicit H/light_v1 recommendation; constructor legacy_deep compatibility default remains"
+    },
+    "E-V4-figure": {
+      "scope": "paper",
+      "path": "review/hg_light_figure_values.json",
+      "bytes": 4520,
+      "sha256": "5e59aaa51621690e7b31364bad796547b5a924e3c8ad62bcd7c41c5d46ae9a04",
+      "role": "Portable six-cell figure input; retains incomplete cell and source summary hash"
+    },
+    "E-V4-pairs": {
+      "scope": "paper",
+      "path": "review/hg_light_complete_pairs.csv",
+      "bytes": 1184,
+      "sha256": "f0e67594996e3fe15adb2a8c04871c36e7eff77412ec86045ee345225190deae",
+      "role": "Portable 15-complete-pair table"
+    },
+    "S-editorial-audit": {
+      "scope": "workspace",
+      "path": "editorial_20261126/editorial_review/EVIDENCE_SCOPE_AUDIT.json",
+      "bytes": 16463,
+      "sha256": "4cecb2ac2694cddc80386c65a87fd428c8d894e2fb205b16a056a5894137d23a",
+      "role": "Read-only editorial source/scope and retained-record arithmetic audit; no new experiments"
+    },
+    "E-freeze-review-audit": {
+      "scope": "paper",
+      "path": "review/final_archive_audit/g_evidence_audit.json",
+      "bytes": 717126,
+      "sha256": "58ff07ad8016d0624944b37bb3833d8bd9409ba0c5a8ed84ab23a0e987f53c19",
+      "role": "Unmodified attached archive-only audit result; reproduced byte-identically"
+    },
+    "E-freeze-mechanisms": {
+      "scope": "paper",
+      "path": "review/final_archive_audit/statistics_recomputed.json",
+      "bytes": 589278,
+      "sha256": "6ba02419f2413937bb944aea76122b4f120e3e11217d5617807ca6e62f746bb2",
+      "role": "Independent frozen G JSON/count/strict-threshold recomputation"
+    },
+    "E-freeze-mechanism-table": {
+      "scope": "paper",
+      "path": "review/final_archive_audit/statistics_recomputed.csv",
+      "bytes": 841,
+      "sha256": "a077bc7319f38f389a88970e2bfc57b4ea73a9399f00ab8787c26206b655aff6",
+      "role": "Four denominator summaries for archived G paths and winners"
+    },
+    "E-freeze-G-derived": {
+      "scope": "paper",
+      "path": "review/final_archive_audit/g_direct_provenance_audit.json",
+      "bytes": 255095,
+      "sha256": "7898a7d7567d25d55d712c59894a03a572b6a2b9f8ec46f1df2325027c9c4f16",
+      "role": "Direct V2 byte/record binding and 30-state /90-observation stored interval containment, zero new replays"
+    },
+    "E-freeze-notes": {
+      "scope": "paper",
+      "path": "review/final_archive_audit/ARCHIVE_EVIDENCE_NOTES.md",
+      "bytes": 6281,
+      "sha256": "41bfb4fc885139cf3db7c1f94af246d906db7a9afc3521689643a943e30fdce0",
+      "role": "Mechanism semantics, static threshold limits, derived verification scope and engineering-selection history"
+    },
+    "S-current-frozen-source": {
+      "scope": "paper",
+      "path": "history/uploaded_revision_20261126/editorial/frozen_baseline/J_CERT_Plus_PVLDB_Frozen_Source_20261126.zip",
+      "bytes": 537236,
+      "sha256": "34b4238e8b8a76513a99c7b128eb9ae6b1b11741e80b6174792c5558ef6b294d",
+      "role": "Historical frozen source included in the uploaded revised archive; not the direct baseline for this edit"
+    },
+    "S-uploaded-revised-source": {
+      "scope": "external_user_attachment",
+      "filename": "J_CERT_Plus_Revised_Source_20261126(1).zip",
+      "sha256": "aced796378957105f4e20591a00d7e51711a2d228f6d0fbb988bcd5c64a53779",
+      "role": "Direct immutable baseline for the current edit; source changes in editorial/MANUSCRIPT_CHANGES.patch"
+    }
+  },
+  "source_path_policy": {
+    "paper": "Relative to this manuscript directory; these files are bundled manuscript or compact retained-data inputs.",
+    "workspace": "Relative to /workspace/scratch/faa1a8a62f06 in the restored working environment; these are external sealed-evidence identities, not a claim that all original archives are nested in the compact paper source. Restore the corresponding V2/V3/V4 original materials if full raw evidence is needed.",
+    "raw_collections": {
+      "V2": {
+        "raw_json_count": 54,
+        "path_sha256_listing_sha256": "aabe577177f7d0dc32cbd20f4cef657d8df984ed7eae50fa5fe9542adfe75ca4",
+        "encoding": "UTF-8 sorted relative-path TAB member-SHA256 LF; excludes .job.json and SCHEDULE_RESULTS.json"
+      },
+      "V4": {
+        "raw_json_count": 36,
+        "path_sha256_listing_sha256": "968f878c179eea10fc46902b1c0504b97a4dd5068ba6ea3bbaf84bd15654a802",
+        "encoding": "UTF-8 sorted relative-path TAB member-SHA256 LF; excludes .job.json and SCHEDULE_RESULTS.json"
+      }
+    },
+    "build_status": "Current: editorial/PDF_ACCEPTANCE.json and CURRENT_BUILD_STATUS_ZH.txt. All old review/ build-success records and history/ build-failure records retain their historical identity."
+  },
+  "publication_metadata": {
+    "template": "Retained official PVLDB 2027 / Volume 20 files; see template_source/provenance.json",
+    "author_identities": "explicit placeholders; not inferred",
+    "artifact_url": "explicit ARTIFACT_URL_TO_BE_SUPPLIED placeholder; not a live public artifact",
+    "AI_assistance": "Actual scope retained in main.tex AK1; exceeds language editing",
+    "page_budget_requirement": "body + appendix + acknowledgments <=12; references may extend",
+    "page_count_and_current_build_result": "See editorial/PDF_ACCEPTANCE.json for current actual build and page acceptance.",
+    "submission_ready": false,
+    "blockers": [
+      "Real author metadata and a public artifact URL remain explicit placeholders."
+    ]
+  },
+  "editorial_boundaries": [
+    "The empirical results, formal environments, algorithms and three supplied figures are unchanged.",
+    "The twelve additions describe relevant prior mechanisms; they are not new experimental baselines.",
+    "Existing scientific claim/evidence mappings remain applicable.",
+    "Current acceptance is in editorial/citation_revision; previous narrative and figure checks are historical."
+  ],
+  "current_session_scope": {
+    "direct_baseline": "figure_replacement/work/paper",
+    "baseline_pdf_sha256": "058fe044981ddadc91ac44d2ac9a8f692e6dfbdb46149cf7fb6d2c857ea0175d",
+    "scope": "Twelve newly cited references and literature positioning; no scientific runs.",
+    "source_check": "editorial/citation_revision/SOURCE_SCOPE_CHECK.json",
+    "citation_audit": "editorial/citation_revision/CITATION_AUDIT.json",
+    "actual_build_and_visual_checks": "editorial/citation_revision/PDF_ACCEPTANCE.json"
+  }
+}

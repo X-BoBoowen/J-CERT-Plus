@@ -1,0 +1,69 @@
+{
+  "cohorts": {
+    "fixed_input_revision_retest": {
+      "complete_pair_wins": {
+        "H_faster_than_D": 36,
+        "H_faster_than_S": 36
+      },
+      "complete_workers": 108,
+      "matched_complete_blocks": 36,
+      "ratios_of_sums": {
+        "D/H": 3.5861022748616,
+        "S/H": 14.26136213480078
+      },
+      "status_counts": {
+        "completed": 108
+      },
+      "total_seconds": {
+        "D": 435.63589438901545,
+        "H": 121.47893757598649,
+        "S": 1732.4551205220014
+      },
+      "workers": 108
+    },
+    "observed_input_light_v1": {
+      "G_percent_less_time": 12.55550703605901,
+      "complete_pair_wins": {
+        "G_faster_than_H": 14
+      },
+      "complete_workers": 30,
+      "matched_complete_blocks": 15,
+      "ratios_of_sums": {
+        "H/G": 1.143582592916817
+      },
+      "status_counts": {
+        "completed_budget": 30,
+        "unresolved": 6
+      },
+      "total_seconds": {
+        "G": 18.833572476007248,
+        "H": 21.537745645999166
+      },
+      "workers": 36
+    },
+    "post_freeze_confirmation": {
+      "complete_pair_wins": {
+        "H_faster_than_D": 15,
+        "H_faster_than_S": 15
+      },
+      "complete_workers": 45,
+      "matched_complete_blocks": 15,
+      "ratios_of_sums": {
+        "D/H": 3.7936753007668074,
+        "S/H": 14.156854963079828
+      },
+      "status_counts": {
+        "completed_budget": 45,
+        "unresolved": 9
+      },
+      "total_seconds": {
+        "D": 211.01984770500349,
+        "H": 55.62411935000091,
+        "S": 787.4625900870051
+      },
+      "workers": 54
+    }
+  },
+  "scope": "Raw stored timing aggregation only. Partial streams remain in the roster and have no complete-service time. No new timings or independent numerical replay.",
+  "status": "passed"
+}

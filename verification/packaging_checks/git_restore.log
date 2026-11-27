@@ -1,0 +1,22 @@
+Cloning into '/tmp/jcert_git_restore'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+HEAD is now at 4c2c7b7 Add bounded V2 unseen protocol and compatible 82140-vertex admission
+Verified package overlay completed
+From /tmp/jcert-restore-v75asoaj/V3_Runtime_Delta.bundle
+ * branch            research/v3-value-diagnostics-20261126 -> FETCH_HEAD
+Previous HEAD position was 4c2c7b7 Add bounded V2 unseen protocol and compatible 82140-vertex admission
+HEAD is now at c6b7526 Add V3 independent flip-first diagonal block access and bounded paired worker
+From /tmp/jcert-restore-v75asoaj/V4_Runtime_Delta.bundle
+ * branch            research/v4-measurement-20261126 -> FETCH_HEAD
+Previous HEAD position was c6b7526 Add V3 independent flip-first diagonal block access and bounded paired worker
+HEAD is now at 9d09794 Add explicit legacy and common light memory observation policies
+Restored V4 9d09794b6a6de8a4c97f615abf3f3cae1f458b75 at /tmp/jcert_git_restore ; no experiments executed.

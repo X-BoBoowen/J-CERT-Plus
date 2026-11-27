@@ -1,0 +1,17 @@
+{
+  "status": "scientific_work_stopped_after_initial_batch_and_one_allowed_profile",
+  "runtime_commit": "c6b752630bd8dbe1f9fd296a7ed02f249f834575",
+  "new_performance_workers": 12,
+  "extra_repeats": 0,
+  "new_seeds": 0,
+  "alpha_diagnostic_processes": 1,
+  "alpha_numeric_fallback_processes": 0,
+  "representative_flow_profile_processes": 1,
+  "slashdot_numeric_processes": 0,
+  "remaining_permitted_work_this_turn": "static packaging/reporting and one independent extracted-code import/relevant-test check; no performance rerun",
+  "primary_next_direction": "First correct the evidence: standardize measurement and reassess performance attribution",
+  "direction_scope": "No observed numerical wrong answer or unbound provenance is asserted. The correction concerns attributing inclusive instrumented H/G time to the candidate algorithm, after one profile showed a material deep-reporting confound.",
+  "why_not_more_repeats_now": "Repeating the same instrumented code cannot remove the demonstrated attribution confound. A changed measurement policy requires its own explicit freeze and should keep numerical resolver and inputs fixed.",
+  "alpha_disposition": "exact_equal pair classification retained; full_decision_verified=false; original and new common unresolved statuses preserved; no resolver expansion this round",
+  "scale_disposition": "not started at dependency/interface admission; not a new root preparation timeout, OOM or solver failure"
+}

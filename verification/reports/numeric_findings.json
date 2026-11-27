@@ -1,0 +1,62 @@
+{
+  "task": "A2 production certificate and A3 theorem-condition audit",
+  "status": "completed_bounded_scope",
+  "execution_evidence": "v3/resumed/reports/numeric_certificate_checks.json",
+  "source_analysis": "v3/resumed/reports/numeric_units_and_contract_audit.md",
+  "harness": "v3/resumed/analysis/production_certificate_checks.py",
+  "root_scheduler_executed": true,
+  "subagent_executed_numeric_processes": 0,
+  "assertions_passed": 174,
+  "assertions_failed": 0,
+  "core_fixture_families": 5,
+  "core_exact_physical_gain_values": 17,
+  "admitted_A2_root_gain_intervals": 16,
+  "weight64_generic_local_gain_intervals": 1,
+  "transported_gain_intervals": 4,
+  "actual_budget_one_service_requests": 15,
+  "actual_accepted_positive_canonical_edits": 12,
+  "actual_certified_zero_stops": 3,
+  "expected_exception_rejections": 16,
+  "actual_resolver_paths": {
+    "small_graph_exact_fallback": 3,
+    "no_unresolved_overlap": 9,
+    "structural_node_transposition": 3
+  },
+  "completion_issues_in_these_fixtures": [],
+  "real_data_decisions_verified": 0,
+  "historical_suite_reexecuted": false,
+  "correctness_finding": "No invalid returned interval or false decision was found on these explicitly checked paths.",
+  "core_patch_needed_on_current_evidence": false,
+  "unit_conclusions": {
+    "raw_score_physical_conversion": "16*raw_integer/2^96",
+    "published_decision_physical_conversion": "published_integer/2^96; factor16 is already included",
+    "weight64_B_inverse_norm": 129,
+    "weight64_Bbar_inverse_norm": 8256,
+    "weight64_integer_normalized_inverse_norm": 132096,
+    "weight64_adapter_effective_inverse_norm": 1,
+    "missing_weight_factor_found": false
+  },
+  "scope_limitations": [
+    "Weight64 is rejected by the natural-weight A2 graph admission and was checked only through the actual generic correction function with certified graph-origin inputs.",
+    "All three equal-path service decisions used the small rational fallback; none is credited to the single-transposition witness.",
+    "The extra three-node twin fixture, separately denominated, exercised three actual successful structural-witness decisions.",
+    "The large/numerical checker checks intersection with a nonpoint independent interval, so it cannot by that test alone certify every published endpoint.",
+    "The invalid-swap attack was rejected at exact opinion invariance; this bounded process did not separately exercise all parent/child conjugacy rejection branches.",
+    "The finite precision theorem requires positive delta and certified attainable complete error allowances; it does not guarantee delta0 service completion.",
+    "No historical full-suite, real Alpha full decision, generic equality platform, or scale success is inferred."
+  ],
+  "finite_precision_example": {
+    "w": 1,
+    "b": 40,
+    "delta": 1e-9,
+    "epsilon_sufficient": 5.1139908617745513e-20,
+    "binary64_unit_roundoff": 1.1102230246251565e-16
+  },
+  "minimal_claim_corrections": [
+    "State exact physical-to-integer-to-local-pivot units before comparing inverse-norm bounds.",
+    "Keep generic weight64 local checks distinct from admitted A2 full-service checks.",
+    "Attribute path equality completion to the observed exact fallback and separately report witnessed equality.",
+    "Describe large replay endpoint evidence as independent interval intersection, preserving its weaker scope than exact containment.",
+    "Retain the manuscript's conditional-arithmetic and delta>0 qualifications."
+  ]
+}

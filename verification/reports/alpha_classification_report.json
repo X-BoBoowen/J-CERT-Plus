@@ -1,0 +1,206 @@
+{
+  "task": "B: independent realAlpha unresolved relation classification",
+  "classification": "exact_equal",
+  "guaranteed_gain_difference": {
+    "lower": {
+      "numerator": 0,
+      "denominator": 1
+    },
+    "upper": {
+      "numerator": 0,
+      "denominator": 1
+    }
+  },
+  "difference_orientation": "g_7073654-g_12373891",
+  "full_decision_verified": false,
+  "same_event_repeated_observations": 9,
+  "independent_physical_events": 1,
+  "binding": {
+    "input_manifest": {
+      "path": "v2_received/evidence/v2/INPUTS.json",
+      "sha256": "ef1e835f6d97a50fb0cc50ab42defefa20b10a6f23fd70f4d28709b28b829780"
+    },
+    "graph": {
+      "path": "v2_received/inputs/data/projected/Alpha_weighted.npz",
+      "sha256": "af41cfe706b6134f45a8bbcd7932088062b10b279b7d09505d677a517e4ee5bd"
+    },
+    "opinions": {
+      "path": "v2_received/inputs/v2/inputs/Alpha_signed-neighbor.npz",
+      "sha256": "074a19dc9ea7d85c8c3eb67a9b2ce80eca91cb1fdf43bc28ae525de3702ddb49",
+      "q1_codes_sha256": "542198eb265966c679285a978216d35880ed5169d894410819aa8e83012d7844",
+      "physical_denominator": 65536
+    },
+    "root_operator": {
+      "csr_compatibility_sha256": "0de279f7226083d9e1cb5bc1664bf71f65f62f617e82e55f376afd4cfd36fedb",
+      "exact_physical_operator_sha256": "d66c17582fee7de05093f7bdce9332f6be14c7d765666e356bd14f1e8ca8c8c6",
+      "physical_denominator": 16,
+      "n": 3783,
+      "nnz": 31945
+    },
+    "parent_operator": {
+      "csr_compatibility_sha256": "a6af7e829f5a3cf5f580ed2d4e59c41cbce95467e2adebc459228644cba6767e",
+      "exact_physical_operator_sha256": "fd37c050508ee4970ece70a2a79fca07f404b88cbc48ecc29a374048f1470a6b",
+      "physical_denominator": 16,
+      "n": 3783,
+      "nnz": 31945
+    },
+    "root_version_id": "1bb419f89369cc92f78f71299b4c09b48b0d6ab87c3249914f1a85b098c7ed21",
+    "parent_version_id": "3b6b2f555abe6c58ea901b11d1bceecc80b8888923c668e2b36a78ba55023734",
+    "accepted_prefix": [
+      {
+        "epoch": 1,
+        "edit": {
+          "candidate_id": 6725985,
+          "i": 1777,
+          "j": 3594,
+          "kind": "flip",
+          "weight_numerator": 72,
+          "weight_denominator": 16
+        },
+        "parent_version_id": "1bb419f89369cc92f78f71299b4c09b48b0d6ab87c3249914f1a85b098c7ed21",
+        "child_version_id": "6493a8433604ad48b7a4339b70fd83099b7aff671bde0528ba0e28f0d3f6f792"
+      },
+      {
+        "epoch": 2,
+        "edit": {
+          "candidate_id": 3926607,
+          "i": 1037,
+          "j": 3636,
+          "kind": "flip",
+          "weight_numerator": 160,
+          "weight_denominator": 16
+        },
+        "parent_version_id": "6493a8433604ad48b7a4339b70fd83099b7aff671bde0528ba0e28f0d3f6f792",
+        "child_version_id": "0ffc1d1297ef52774a7496fe34ed31bf8b3591f0f2a2c1302313d8fc909fe840"
+      },
+      {
+        "epoch": 3,
+        "edit": {
+          "candidate_id": 13138219,
+          "i": 3472,
+          "j": 3643,
+          "kind": "flip",
+          "weight_numerator": 160,
+          "weight_denominator": 16
+        },
+        "parent_version_id": "0ffc1d1297ef52774a7496fe34ed31bf8b3591f0f2a2c1302313d8fc909fe840",
+        "child_version_id": "3b6b2f555abe6c58ea901b11d1bceecc80b8888923c668e2b36a78ba55023734"
+      }
+    ],
+    "raw_record_count": 9,
+    "parent_reconstruction": "original physical graph plus exactly the three accepted legal edits",
+    "catalog": {
+      "representation": "all canonical unordered pairs with exact root/current legality predicate",
+      "root_positive_edges": 12769,
+      "root_negative_edges": 1312,
+      "root_nonedges": 7139572,
+      "root_legal_count": 7140884,
+      "current_legal_count": 7140881,
+      "chosen_ids": [
+        3926607,
+        6725985,
+        13138219
+      ],
+      "insertion_weight": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "all_candidates_numerically_evaluated": false
+    },
+    "observed_candidate_edits": [
+      {
+        "candidate_id": 7073654,
+        "i": 1869,
+        "j": 3227,
+        "kind": "insert",
+        "weight_numerator": 1,
+        "weight_denominator": 16
+      },
+      {
+        "candidate_id": 7073908,
+        "i": 1869,
+        "j": 3481,
+        "kind": "insert",
+        "weight_numerator": 1,
+        "weight_denominator": 16
+      },
+      {
+        "candidate_id": 12211011,
+        "i": 3227,
+        "j": 3270,
+        "kind": "insert",
+        "weight_numerator": 1,
+        "weight_denominator": 16
+      },
+      {
+        "candidate_id": 12373891,
+        "i": 3270,
+        "j": 3481,
+        "kind": "insert",
+        "weight_numerator": 1,
+        "weight_denominator": 16
+      }
+    ],
+    "observed_candidates_are_a_complete_competitor_set": false,
+    "physical_spectral_lower_bound": {
+      "value": 1,
+      "proof": "A=I+sum_edges |w|*(e_i-sign(w)*e_j)*(e_i-sign(w)*e_j)^T; original symmetry and legal edits checked"
+    }
+  },
+  "witness": {
+    "permutation": {
+      "1869": 3270,
+      "3227": 3481,
+      "3270": 1869,
+      "3481": 3227
+    },
+    "checked_equalities": [
+      "P A_parent P^T = A_parent",
+      "P s = s",
+      "P A_a P^T = A_b"
+    ],
+    "search_ordinal": 17,
+    "frozen_search_size": 24,
+    "extension": null,
+    "arithmetic": "exact integer full sparse parent/opinion/child comparisons"
+  },
+  "equal_observed_subset": [
+    7073654,
+    7073908,
+    12211011,
+    12373891
+  ],
+  "equal_subset_scope": "The two saved witnesses and the new composed-swap witness establish equality among these four observed candidates only; they are not assumed to be all global maximizers.",
+  "cause_supported_by_evidence": "The remaining pair has four distinct endpoints. Frozen exact_ties._BoundExchange.certify returns no witness unless the endpoint symmetric difference has size two; weighted_adapter.resolve stops unresolved on graphs with more than 16 nodes when its single-transposition star is incomplete. Two disjoint valid swaps compose to prove this pair equal. This is a finite witness-family completion limitation for this event, not a nonzero tiny gap.",
+  "unproved_obligations": {
+    "strict_positive_gain": false,
+    "numerical_coverage_of_all_7140881_current_legal_candidates": false,
+    "global_canonical_winner": false,
+    "prior_three_accepted_gains_numerically_reproved": false
+  },
+  "preservation": "V2 remains unresolved; no runtime resolver extension or resumed q1 service; no numerical fallback required.",
+  "work": {
+    "processes_executed": 1,
+    "floating_point_solves": 0,
+    "numeric_precision_levels_executed": [],
+    "external_process_wall_seconds": 0.3663109520002763,
+    "internal_diagnostic_wall_seconds": 0.29373174300053506,
+    "sampled_peak_rss_bytes": 40951808,
+    "memory_limit_bytes": 4294967296,
+    "wall_limit_seconds": 600.0,
+    "exit_code": 0
+  },
+  "sources": {
+    "v3/resumed/diagnostics/alpha_structure/alpha_classification.json": "819cbc6fddf8c33833b37c8c509d3b892d2b284aa521f6bd7c9ea3858525644c",
+    "v3/resumed/diagnostics/alpha_structure/alpha_parent_binding.json": "ddc70bee0f7f3c570fcd4454ff80f230a7f68082334a43b456c686b95c071887",
+    "v3/resumed/diagnostics/alpha_structure/alpha_exact_relation_witness.json": "462399738f37dc67026d3975436615c94ae8309f7a0ed4baa361708dbc15dc67",
+    "v3/resumed/diagnostics/alpha_structure/alpha_saved_witness_checks.json": "a8edda9d3948788471eeb9941f7ed83a3a16eecd07f716da8c27add60996dbd0",
+    "v3/resumed/diagnostics/alpha_structure/alpha_candidate_context.json": "4b8c96c7367541af1269c017762b47731f83daedbb37fece5d1b4d7f3d85c9a0",
+    "v3/resumed/diagnostics/alpha_structure/alpha_attempts.jsonl": "d1e84938261434c5455cd1042d8c168c14a997ec2b9ed5721fbb427f164c7e81",
+    "v3/resumed/protocols/ALPHA_DIAGNOSTIC.json": "1cfdb290b0e4f5bca6e56e3f7e4a44374f40acc489f79751006818bbf0edef25",
+    "v3/resumed/analysis/alpha_relation_diagnostic.py": "913a4e7c7a9316b8b789ade5d03dbfd09438ba43ea1a156522a67d50400b9e35",
+    "v3/runs/resumed_alpha_relation_structure/record.json": "8ed3bc959045ca0a6107a0cf9edd9efbee99928b931e336c76cb19e72c52c30b",
+    "v2_received/code/src/exact_ties.py": "9e0b7870c0a5b798098d843580081a3fa7b0bd9a9186bf637d0546c3e693cba0",
+    "v2_received/code/src/weighted_adapter.py": "5547ab18f7a510916c5d2d70f95440c1d69d8e8370e9cab784ae1c4bbdb4cdbd"
+  }
+}

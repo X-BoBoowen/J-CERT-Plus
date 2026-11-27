@@ -1,0 +1,44 @@
+test_bounded_scan_is_exhaustive_with_insert_and_flip_exclusions (test_a2_catalog.CatalogTests.test_bounded_scan_is_exhaustive_with_insert_and_flip_exclusions) ... ok
+test_empty_and_dense_complements (test_a2_catalog.CatalogTests.test_empty_and_dense_complements) ... ok
+test_invalid_identity_is_rejected_without_float_or_int32_truncation (test_a2_catalog.CatalogTests.test_invalid_identity_is_rejected_without_float_or_int32_truncation) ... ok
+test_large_identity_and_dense_ordinal_need_int64_without_catalog_storage (test_a2_catalog.CatalogTests.test_large_identity_and_dense_ordinal_need_int64_without_catalog_storage) ... ok
+test_mixed_domain_batch_scalar_and_dense_positions (test_a2_catalog.CatalogTests.test_mixed_domain_batch_scalar_and_dense_positions) ... ok
+test_root_graph_validation_and_snapshot (test_a2_catalog.CatalogTests.test_root_graph_validation_and_snapshot) ... ok
+test_stream_counters_cover_actual_work_and_partial_chunks (test_a2_catalog.CatalogTests.test_stream_counters_cover_actual_work_and_partial_chunks) ... ok
+test_caps_exceeding_int64_and_source_reset_are_exact (test_a2_catalog.FrontierTests.test_caps_exceeding_int64_and_source_reset_are_exact) ... ok
+test_chosen_and_processed_insertions_and_flips_are_skipped_once (test_a2_catalog.FrontierTests.test_chosen_and_processed_insertions_and_flips_are_skipped_once) ... ok
+test_empty_dense_and_all_chosen_domains (test_a2_catalog.FrontierTests.test_empty_dense_and_all_chosen_domains) ... ok
+test_every_remaining_head_covers_mixed_catalog_after_each_pop (test_a2_catalog.FrontierTests.test_every_remaining_head_covers_mixed_catalog_after_each_pop) ... ok
+test_negative_flip_head_preserves_exact_signed_integer_cap (test_a2_catalog.FrontierTests.test_negative_flip_head_preserves_exact_signed_integer_cap) ... ok
+test_repeated_center_ties_stay_competitive_at_threshold (test_a2_catalog.FrontierTests.test_repeated_center_ties_stay_competitive_at_threshold) ... ok
+test_small_independent_graph_family_and_frontier_input_validation (test_a2_catalog.FrontierTests.test_small_independent_graph_family_and_frontier_input_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.045s
+
+OK
+test_budget_zero_and_second_request_reset (test_v3_g.GChecks.test_budget_zero_and_second_request_reset) ... ok
+test_chosen_and_processed_candidates_are_removed (test_v3_g.GChecks.test_chosen_and_processed_candidates_are_removed) ... ok
+test_continuous_g_trace_passes_independent_exact_full_catalog_checker (test_v3_g.GChecks.test_continuous_g_trace_passes_independent_exact_full_catalog_checker) ... ok
+test_current_diagonal_reconstructed_after_insertion_and_flip (test_v3_g.GChecks.test_current_diagonal_reconstructed_after_insertion_and_flip) ... ok
+test_every_constructed_block_bound_contains_physical_nonedges (test_v3_g.GChecks.test_every_constructed_block_bound_contains_physical_nonedges) ... ok
+test_pair_tree_partitions_irregular_nonedge_catalog_exactly (test_v3_g.GChecks.test_pair_tree_partitions_irregular_nonedge_catalog_exactly) ... ok
+test_service_winners_match_independent_exact_catalog (test_v3_g.GChecks.test_service_winners_match_independent_exact_catalog) ... ok
+test_zero_state_stops_without_insertion_frontend (test_v3_g.GChecks.test_zero_state_stops_without_insertion_frontend) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.096s
+
+OK
+test_formal_worker_requires_explicit_matching_light_policy (test_measurement_policy.MeasurementPolicyChecks.test_formal_worker_requires_explicit_matching_light_policy) ... ok
+test_legacy_policy_retains_reporting (test_measurement_policy.MeasurementPolicyChecks.test_legacy_policy_retains_reporting) ... ok
+test_light_memory_schema_does_not_claim_deep_peak (test_measurement_policy.MeasurementPolicyChecks.test_light_memory_schema_does_not_claim_deep_peak) ... ok
+test_light_policy_never_calls_deep_walks (test_measurement_policy.MeasurementPolicyChecks.test_light_policy_never_calls_deep_walks) ... ok
+test_measurement_policy_preserves_small_service_semantics (test_measurement_policy.MeasurementPolicyChecks.test_measurement_policy_preserves_small_service_semantics) ... ok
+test_semantic_projection_detects_endpoint_and_cache_work_changes (test_measurement_policy.MeasurementPolicyChecks.test_semantic_projection_detects_endpoint_and_cache_work_changes) ... ok
+test_unknown_measurement_policy_rejected (test_measurement_policy.MeasurementPolicyChecks.test_unknown_measurement_policy_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.081s
+
+OK

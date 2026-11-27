@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-11-25T16:30:30.830847+00:00",
+  "master_seed_hex": "7b2e0dff9360d8a07a19957a80d39fb093b0d4b14fdbb99ea44889a306d71d83",
+  "source": "one secrets.token_hex(32) draw after CODE_FREEZE",
+  "prior_seed_integers": [
+    17,
+    104729,
+    130363,
+    155921,
+    196613,
+    262147,
+    393241,
+    524287,
+    1785852751678091259,
+    2841882720779677900,
+    3392188976662114637,
+    3961752723630271426,
+    4585209206980420431,
+    5294843353443841014,
+    6258903631623120401,
+    6681204798867761729,
+    6996698661245941302,
+    7260589032235989729,
+    9427395193028801538,
+    10707082269279832705,
+    10849017327187200757,
+    11687557810549899087,
+    12793347809929181656,
+    13041955368270560714,
+    13872873954501838006,
+    15260563721662406391
+  ],
+  "prior_seed_sources": [
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/ENVIRONMENT.json",
+      "sha256": "34778e99cf0da1a62b4cb3135f89e3c978e778b4699521d4e77877fb05362c0e"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/NATIVE_BUILD.json",
+      "sha256": "0c76e6bdfcfdf8354b9bcfa34e3eae7740120e1b38c3dbc8411db72aab6b1d77"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/NATIVE_PREFLIGHT.json",
+      "sha256": "06322e99a51a3294a16e01f4a002565dfb81a16969f6a2422b18c4a5470e3ff3"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/PROTOCOL.json",
+      "sha256": "3cf543e3d83acf193b97ce281108fcf5ea48cbf68f882f962e459b5adf356ee5"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/R14_BASELINE_HASHES.json",
+      "sha256": "2a84817e590b9ed415c9e5c1364287edefa22e3047d0d0fb658c3ebc5e478f28"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/RUNTIME_SOURCE_HASHES.json",
+      "sha256": "5c81cec8c5866c395da8e8496e84e4aa9ebe693dd637f96bd299045c59fdb65a"
+    },
+    {
+      "path": "baseline_r15/experimental_records/evidence_supplement_20261124/protocol/SCHEDULE.json",
+      "sha256": "1d5d88f4080e99da92c60b69cde3d88e1d6850d725cce9fbb6be8424815c11bc"
+    },
+    {
+      "path": "protocol/A2_CONFIRMATION.json",
+      "sha256": "85c5e700bb12a37ed2b58181c75848ae6e7db340d0e24121596d98099d4519f7"
+    },
+    {
+      "path": "protocol/A2_CONFIRMATION_ADMISSION.json",
+      "sha256": "5efcc1de65293d5cbab60cb0aa5fb3458908d56df5b88230b83e0034dc0d2c63"
+    },
+    {
+      "path": "protocol/A2_CONFIRMATION_INPUTS.json",
+      "sha256": "057be88c3fad9d6242ab9b8d5c691f3721d605b49528e67e51dfb44c7886024e"
+    },
+    {
+      "path": "protocol/A2_DEVELOPMENT.json",
+      "sha256": "95e40b89e73e102ea2ca7e4ce617103819da91d13c0bfce19f46f32dd9ac531b"
+    },
+    {
+      "path": "protocol/A2_DEVELOPMENT_INPUTS.json",
+      "sha256": "cfe24489aa4086dc3b3e5e773aae58b582033cacf4017f9314b8721b74cab057"
+    },
+    {
+      "path": "protocol/A2_TIE_RETEST.json",
+      "sha256": "609b639c50822f9d5e663ff69f633a11d5d151a51445180871b6cb39b5e4cae8"
+    },
+    {
+      "path": "protocol/A2_TIE_RETEST_ADMISSION.json",
+      "sha256": "1d580388ca108a8ffaa2ea9a5a9dc2cbe80ecec97e073cf64ea4a19caad647d8"
+    },
+    {
+      "path": "protocol/A2_TIE_RETEST_INPUTS.json",
+      "sha256": "35e2f0d4fc86971ef850510baa1315ee0d902e047c03b72f4161f7f6b17b2b3c"
+    },
+    {
+      "path": "protocol/ACCESS_CONFIRMATION.json",
+      "sha256": "ab11af7fcbdf0458d0a1ca1dc66cef1c250dc83416558c4ccfd1fd9c9ce01ebe"
+    },
+    {
+      "path": "protocol/ACCESS_CONFIRMATION_ADMISSION.json",
+      "sha256": "31dc3fe033e6aa45a7789efb346217ce9cef328e172df6bce083e0d90e47097e"
+    },
+    {
+      "path": "protocol/ACCESS_CONFIRMATION_INPUTS.json",
+      "sha256": "1db22ebd9cb342c30f65e1edeba4e124929e13f788966fb1248fd31738f74a99"
+    },
+    {
+      "path": "protocol/ACCESS_DEVELOPMENT.json",
+      "sha256": "794034735c729cbe554bff97efcd93214ae2381d63a95d9dda927a758202a140"
+    },
+    {
+      "path": "protocol/ACCESS_DEVELOPMENT_INPUTS.json",
+      "sha256": "376003c661caf42219f47ae31b0d90fde9bad9e48dfd3c924842aa465356fc5e"
+    },
+    {
+      "path": "protocol/ACCESS_DIAGNOSTIC.json",
+      "sha256": "5e259fc01860b1634aefedeeefdd03486b4e61b35de398e07d3110a2e8d798d4"
+    },
+    {
+      "path": "protocol/ACCESS_ENVIRONMENT.json",
+      "sha256": "9de871dfaea1091002e5e2ce59c31c93d640c41b860878dcb4e76cbe6c984077"
+    }
+  ],
+  "collision_policy": "increment per-cell derivation counter only for an already registered integer seed"
+}

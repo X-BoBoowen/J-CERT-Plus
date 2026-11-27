@@ -1,0 +1,2 @@
+epoch,candidate,flip,root_strictly_positive,root_test,root_gain_low,root_high,root_abs_endpoint_difference_low_units,state_denominator,admission_low,admission_high,revived_at_admission
+2,20755,1,0,Gram interval,-23193758727393314431817008,-23193758520083569400104192,137437945719,281474976710656,5834562977005888854037056,5834563136217357376499024,1

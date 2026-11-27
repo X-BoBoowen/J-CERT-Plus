@@ -1,0 +1,176 @@
+{
+  "source": "V4_Evidence.zip/v4/reports/hg_light_summary.json",
+  "source_sha256": "765353ee62c30bb22e6abdc680b35158a3c1744af55f1864b75f21c8a629bf22",
+  "policy": "light_v1",
+  "cells": [
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "complete": true,
+      "H_seconds": [
+        1.0818188809971616,
+        1.1163970910001808,
+        1.0772771759984607
+      ],
+      "G_seconds": [
+        0.8431342950007092,
+        0.9108229070006928,
+        0.8365235010005563
+      ],
+      "ratios_by_repeat": [
+        1.2830920144177644,
+        1.2257015962372273,
+        1.2878026435718084
+      ],
+      "scope": "three complete Q4 pairs"
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "complete": true,
+      "H_seconds": [
+        0.9398933930006024,
+        1.0297429229976842,
+        0.9293914080008108
+      ],
+      "G_seconds": [
+        0.7543995520027238,
+        0.7506915110006958,
+        0.8155408160018851
+      ],
+      "ratios_by_repeat": [
+        1.2458827560348404,
+        1.3717258126777057,
+        1.1396013415454396
+      ],
+      "scope": "three complete Q4 pairs"
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "complete": false,
+      "H_seconds": null,
+      "G_seconds": null,
+      "ratios_by_repeat": null,
+      "scope": "three partial pairs; unresolved q1; no complete Q4 cost"
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "complete": true,
+      "H_seconds": [
+        1.6360933280029712,
+        1.6322013399985735,
+        1.6337089280023065
+      ],
+      "G_seconds": [
+        1.4838289620020078,
+        1.354180804997668,
+        1.4162685300016165
+      ],
+      "ratios_by_repeat": [
+        1.102615847176568,
+        1.2053053284870512,
+        1.153530487612008
+      ],
+      "scope": "three complete Q4 pairs"
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "complete": true,
+      "H_seconds": [
+        1.6257551589987997,
+        1.65366707999965,
+        1.6654329440025322
+      ],
+      "G_seconds": [
+        1.4299349000048096,
+        1.4276801389951288,
+        1.3587809359978564
+      ],
+      "ratios_by_repeat": [
+        1.1369434783313084,
+        1.1582896160225231,
+        1.2256817120998815
+      ],
+      "scope": "three complete Q4 pairs"
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "complete": true,
+      "H_seconds": [
+        1.802301959001852,
+        1.8713994009995076,
+        1.8426646349980729
+      ],
+      "G_seconds": [
+        2.143747667001662,
+        1.7062720520007133,
+        1.6017659029985225
+      ],
+      "ratios_by_repeat": [
+        0.8407248608333784,
+        1.0967766827131535,
+        1.1503957173445791
+      ],
+      "scope": "three complete Q4 pairs"
+    }
+  ],
+  "statistic": "median and min-max over three timing repeats; not confidence intervals",
+  "independent_streams": 6,
+  "new_inputs": 0,
+  "ratio_of_sums": {
+    "H_total_seconds": 21.537745645999166,
+    "G_total_seconds": 18.833572476007248,
+    "H_over_G_ratio_of_sums": 1.143582592916817,
+    "complete_pairs": 15,
+    "selection_eligible": true,
+    "scope": "Descriptive sum ratio on the recorded eligible original-complete pairs; the full frozen gate is required for implementation selection."
+  },
+  "repeat_aggregates": [
+    {
+      "repeat_id": 0,
+      "complete_pairs": 5,
+      "H_total_seconds": 7.085862720001387,
+      "G_total_seconds": 6.655045376011913,
+      "H_over_G_ratio_of_sums": 1.0647354480169817
+    },
+    {
+      "repeat_id": 1,
+      "complete_pairs": 5,
+      "H_total_seconds": 7.303407834995596,
+      "G_total_seconds": 6.149647413994899,
+      "H_over_G_ratio_of_sums": 1.1876140766013767
+    },
+    {
+      "repeat_id": 2,
+      "complete_pairs": 5,
+      "H_total_seconds": 7.148475091002183,
+      "G_total_seconds": 6.028879686000437,
+      "H_over_G_ratio_of_sums": 1.1857053819802608
+    }
+  ],
+  "counts": {
+    "workers_scheduled": 36,
+    "worker_records": 36,
+    "complete_Q4_workers": 30,
+    "eligible_complete_Q4_workers": 30,
+    "requests_recorded": 144,
+    "completed_requests": 138,
+    "accepted_record_observations": 2088,
+    "original_complete_pairs": 15,
+    "partial_or_ineligible_pairs": 3,
+    "independent_input_streams": 6,
+    "new_input_streams": 0,
+    "worker_status_counts": {
+      "completed_budget": 30,
+      "unresolved": 6
+    },
+    "request_status_counts": {
+      "completed_budget": 138,
+      "unresolved": 6
+    }
+  }
+}

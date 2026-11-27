@@ -1,0 +1,195 @@
+{
+  "id": "J-CERT+-V3-resumed-Alpha-independent-relation-v1",
+  "frozen_before_first_run": true,
+  "frozen_utc": "2026-11-26T04:24:04.501480+00:00",
+  "code_path": "v3/resumed/analysis/alpha_relation_diagnostic.py",
+  "code_sha256": "913a4e7c7a9316b8b789ade5d03dbfd09438ba43ea1a156522a67d50400b9e35",
+  "v2_frozen_commit": "4c2c7b7e84c7c03ee56d45453fea6950c94817bd",
+  "attached_plan_sha256": "7cdc03d736bd37e3599ddcf9f599c28f9c253790a30141f6b26f8d07717880b7",
+  "execution_authority": "Root single numeric scheduler only; this protocol preparation performed no solver/checker/test/diagnostic execution.",
+  "input_manifest": {
+    "path": "v2_received/evidence/v2/INPUTS.json",
+    "sha256": "ef1e835f6d97a50fb0cc50ab42defefa20b10a6f23fd70f4d28709b28b829780"
+  },
+  "raw_records": [
+    {
+      "path": "v2_received/evidence/v2/raw_a/006_Alpha_signed-neighbor_H_r0.json",
+      "sha256": "a095da9a323bfd0a61115cabfbe8f7bd3cb821a0414e8f8e3e2ab26b4cbf6c16",
+      "method": "H",
+      "repeat_id": 0
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/007_Alpha_signed-neighbor_D_r0.json",
+      "sha256": "812a74a8507b70d77bc1e8136ff9fdb7fe8c81e6449616bb2a1cc9a15f9b955d",
+      "method": "D",
+      "repeat_id": 0
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/008_Alpha_signed-neighbor_S_r0.json",
+      "sha256": "01c4ffca774d4c268c181f424b7086d93576d77ac028238f96bc639b8d92329c",
+      "method": "S",
+      "repeat_id": 0
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/024_Alpha_signed-neighbor_D_r1.json",
+      "sha256": "47b0c73f92bd37ad42ec39a51147174b8b17b31f72a6570360d55f7ee7727a64",
+      "method": "D",
+      "repeat_id": 1
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/025_Alpha_signed-neighbor_S_r1.json",
+      "sha256": "69405e2e26229742fc20d15e450d690d7d58bc554bd848ab5408a072d507018e",
+      "method": "S",
+      "repeat_id": 1
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/026_Alpha_signed-neighbor_H_r1.json",
+      "sha256": "0e015442fb721330658f533fa46b7e79cfd044f09768433d5a5b63eca59eafae",
+      "method": "H",
+      "repeat_id": 1
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/042_Alpha_signed-neighbor_S_r2.json",
+      "sha256": "b55e5512c10b49b670b70588b240af150234831f2aa83e690a95add9bcf01bc6",
+      "method": "S",
+      "repeat_id": 2
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/043_Alpha_signed-neighbor_H_r2.json",
+      "sha256": "ba85838133482f8723af1ee0b3fa3149e1011f05afdb03c466a59cb7e4fb76fd",
+      "method": "H",
+      "repeat_id": 2
+    },
+    {
+      "path": "v2_received/evidence/v2/raw_a/044_Alpha_signed-neighbor_D_r2.json",
+      "sha256": "a5bbf903fe0e467e5dc0fffdfb0f45ae791660c7487ceb595af82a2f11007955",
+      "method": "D",
+      "repeat_id": 2
+    }
+  ],
+  "expected_n": 3783,
+  "target_pair": [
+    7073654,
+    12373891
+  ],
+  "target_selection": "Provisional candidate and remaining unresolved candidate named by all nine Alpha/signed-neighbor/q1 epoch-4 records; no top-two or global-winner premise.",
+  "historical_observations": {
+    "q1_opinion_codes_sha256": "542198eb265966c679285a978216d35880ed5169d894410819aa8e83012d7844",
+    "accepted_prefix_ids": [
+      6725985,
+      3926607,
+      13138219
+    ],
+    "fourth_parent_version_id": "3b6b2f555abe6c58ea901b11d1bceecc80b8888923c668e2b36a78ba55023734",
+    "observed_other_overlap_ids": [
+      7073908,
+      12211011
+    ],
+    "saved_swap_declarations": [
+      [
+        3227,
+        3481
+      ],
+      [
+        1869,
+        3270
+      ]
+    ],
+    "evidence_status": "read from raw records only; independent physical validation deferred to scheduled process"
+  },
+  "input_mapping": {
+    "graph": "v2_received/inputs/<INPUTS.graphs.Alpha.weighted_path>",
+    "opinion": "v2_received/inputs/v2/<unique INPUTS fixture(graph=Alpha, stream=signed-neighbor).file>",
+    "resolved_graph_path": "v2_received/inputs/data/projected/Alpha_weighted.npz",
+    "resolved_opinion_path": "v2_received/inputs/v2/inputs/Alpha_signed-neighbor.npz",
+    "graph_sha256": "af41cfe706b6134f45a8bbcd7932088062b10b279b7d09505d677a517e4ee5bd",
+    "opinion_file_sha256": "074a19dc9ea7d85c8c3eb67a9b2ce80eca91cb1fdf43bc28ae525de3702ddb49"
+  },
+  "physical_reconstruction": {
+    "operator": "A=I+D-W; D_ii=sum_j abs(W_ij); exact representation A16=16*A",
+    "opinion": "s=exact int64 q1 codes / 65536",
+    "read_path": "direct original NPZ CSR payload; no production or saved-checker imports",
+    "checks": [
+      "original CSR canonical endpoint uniqueness and exact symmetry",
+      "graph weights exactly representable on physical 1/16 lattice",
+      "manifest counts, file hashes and exact opinion row/matrix hashes",
+      "each of three edits decoded from ID; independently derived root/current legality and physical weight",
+      "build physical root and parent from edge dictionaries before checking any saved operator digest",
+      "compare independently rebuilt root/parent version sequence in all nine records",
+      "recover all legal candidates as an exact canonical pair predicate and count, with original positive edges and chosen IDs excluded"
+    ],
+    "gain_coverage": "Legal-domain reconstruction is not numerical certification of every candidate."
+  },
+  "structure": {
+    "method": "exact sparse full-entry permutation conjugacy",
+    "support": "sorted union of the two decoded candidate endpoint pairs; fixed identity elsewhere",
+    "observed_support": [
+      1869,
+      3227,
+      3270,
+      3481
+    ],
+    "maximum_support_size": 4,
+    "candidate_permutations": "itertools.permutations(support), lexicographic order, at most 4!=24; first exact proof ends search",
+    "extension": "none",
+    "checks": [
+      "edit kinds and physical weights equal",
+      "unordered endpoint image equals target pair",
+      "P*s=s using original exact opinion codes",
+      "P*A_parent*P^T=A_parent, every sparse integer entry and total nnz",
+      "P*A_a*P^T=A_b, independently built full child operators"
+    ],
+    "saved_witness_policy": "Retain all nine terminal comparison/access/seed records; deduplicate identical declarations by exact JSON digest, retain all source paths, independently recheck each unique saved declaration and reject binding/algebra failures.",
+    "stop_if_proven": "classification=exact_equal; guaranteed g_a-g_b=[0,0]; zero floating-point solves; do not start second process"
+  },
+  "numeric": {
+    "admission": "Only second process; prior structural process must complete unclassified with matching code/protocol/physical-parent binding.",
+    "method": "two independent direct physical child systems; parent objective cancels in g_a-g_b=J_b-J_a",
+    "approximate_backend": "one SciPy splu binary64 factor per physical child; only trial generation, not a certificate",
+    "trial_bits": [
+      52,
+      80,
+      112
+    ],
+    "refinement": "Initial binary64 child solution quantized exactly to 2^-52. At each of 80 and 112 bits, lift previous dyadic trial exactly and add one quantized binary64 correction solve from the newly recomputed exact residual. No additional iterations/precision/backends.",
+    "maximum_child_factors": 2,
+    "maximum_trial_solves_per_child": 3,
+    "exact_certificate": "For each dyadic q, compute F=2*s^T*q-q^T*A*q and r=s-A*q entirely in Python integers/rationals. Since physical A>=I, J=s^T*A^-1*s belongs to [F,F+||r||_2^2]. Subtract exact child intervals outward as [L_b-U_a,U_b-L_a].",
+    "rounding": "Exact rational arithmetic for all certificate quantities and exact nearest/ties-even dyadic trial quantization. No mpmath or arbitrary-precision solver platform.",
+    "retention": "Save every dyadic q numerator vector, exact energy, residual norm, objective bounds and each achieved difference interval; normal completion or failure never erases attained attempts.",
+    "stop": "First difference interval excluding zero; exact zero residual solutions with equal objectives; otherwise after 112-bit trial or hard resource limit."
+  },
+  "classification": {
+    "separated": "A guaranteed difference interval strictly excludes zero.",
+    "exact_equal": "A fully checked exact physical permutation relation, or both dyadic child trials are exact solutions and exact child objectives agree.",
+    "unclassified": "No exact relation and no guaranteed nonzero difference within the frozen finite work; overlap alone never implies equality."
+  },
+  "full_decision_verified": false,
+  "full_decision_scope": "This pair diagnostic does not establish strict positive gain, numerical coverage of all current legal competitors, or the global canonical winner. The field remains false even after exact_equal or separated.",
+  "v2_preservation": "Inputs and raw unresolved records are read-only; no runtime resolver change, V2 rewrite, or resumed service request.",
+  "budget": {
+    "maximum_processes": 2,
+    "per_process_seconds": 600,
+    "per_process_memory_bytes": 4294967296,
+    "numerical_threads": 1,
+    "serial_with_other_numeric_work": true,
+    "global_cumulative_process_wall_seconds": 10800,
+    "external_budget_ledger_required": true
+  },
+  "hard_stops": [
+    "missing/digest-mismatched input or any original-parent/legality binding failure",
+    "invalid saved witness or exact certificate contradiction",
+    "first valid exact structural proof",
+    "fixed numeric precision schedule exhausted",
+    "600 seconds, 4 GiB, two-process allotment, or global cumulative budget cap reached"
+  ],
+  "outputs": [
+    "alpha_parent_binding.json",
+    "alpha_candidate_context.json",
+    "alpha_saved_witness_checks.json",
+    "alpha_attempts.jsonl",
+    "alpha_exact_relation_witness.json when proven",
+    "alpha_trial_<id>_<bits>.json if numeric fallback is admitted",
+    "alpha_classification.json"
+  ]
+}

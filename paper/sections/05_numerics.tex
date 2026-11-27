@@ -1,0 +1,133 @@
+\section{Numerical and Equality Evidence}
+\label{sec:numerics}
+
+\subsection{Directional Gain and Transfer Intervals}
+% P:N1
+The decision layer needs bounds on three quantities: the current equilibrium, a candidate's gain, and the error inherited by a transferred summary. We begin with the \emph{residual}, the discrepancy left by substituting an approximate solution into its equation. Checking it against the exact operator and right-hand side, then applying $\|A^{-1}\|_2,\|A^{-1}\|_\infty\le1$, bounds solution error. A tilde denotes a computed center; $E_X$ is an error bound in Euclidean norm for vectors or spectral norm for matrices, possibly bounded above using the Frobenius norm. We write $\fl$ for rounded evaluation. \emph{Outward rounding} moves lower endpoints down and upper endpoints up (Appendix~\ref{app:arithmetic}). The analysis uses the unbarred basis of~\eqref{eq:gram}; the implementation scales these bounds to its normalized coordinates. The first step is to control the small pivot inverse.
+
+\begin{theorem}[Legal signed-pivot bounds]\label{thm:pivot}
+For $A'=A+UJU^\top$ with both versions legal and $J=J^\top=J^{-1}$,
+\begin{equation}
+ B^{-1}=J-JU^\top A'^{-1}UJ,\qquad
+ \|B\|_2,\|B^{-1}\|_2\le\beta:=1+\|U\|_2^2.
+ \label{eq:pivot-bound}
+\end{equation}
+For one edit, $\beta=1+2\omega_e$ and the spectral condition number satisfies $\kappa_2(B)\le\beta^2$.
+\end{theorem}
+\begin{proof}
+For $G=U^\top A^{-1}U$ and $G'=U^\top A'^{-1}U$, the resolvent identity yields $(I+GJ)G'=G$. Thus $(J+G)(J-JG'J)=I$. The norms follow from $A,A'\succeq I$ and $\|J\|_2=1$.
+\end{proof}
+
+% P:N2
+A score uses $B^{-1}$ only in the direction specified by $h$. A \emph{directional} certificate bounds error in that particular output, rather than bounding every possible use of the inverse. For a trial solution $p\in\R^{r_e}$ to $Bp=h$, symmetry gives
+\begin{equation}
+ h^\top B^{-1}h=2h^\top p-p^\top Bp
+ +(h-Bp)^\top B^{-1}(h-Bp).
+ \label{eq:direction-identity}
+\end{equation}
+The first two terms form a corrected score center; the remaining error is quadratic in the residual $h-Bp$. This symmetric instance of primal--dual output correction~\cite{BalabanovNouy2019} applies because the small pivot is symmetric, including for flips. The complete enclosure also includes uncertainty in $h$ and $B$ and rounding in the center. The same identity also bounds the correction used to transfer a Gram.
+
+\begin{theorem}[Directional certificates]\label{thm:directional}
+Let $E_B=E_G+\eta_B$, where $\eta_B$ bounds pivot assembly and all norms below are certified upper bounds. For a candidate trial $p$ with verified $\rho_p\ge\|\widetilde h-\widetilde Bp\|_2$, the center $\widehat g_d=\fl(2\widetilde h^\top p-p^\top\widetilde Bp)$ has radius
+\begin{equation}
+ \begin{aligned}
+ R_g={}&2E_h\|p\|_2+E_B\|p\|_2^2\\
+ &+\beta(\rho_p+E_h+E_B\|p\|_2)^2+\eta_g.
+ \end{aligned}
+ \label{eq:directional-score}
+\end{equation}
+For transfer through $a$, use a trial $P\in\R^{r_a\times r_e}$ for $B_aP=C_{ea}^\top$ and verify $\rho_P\ge\|\widetilde C_{ea}^\top-\widetilde B_aP\|_2$. The correction $C_{ea}B_a^{-1}C_{ea}^\top$ is enclosed by
+\begin{equation}
+ \widehat Q_d=\fl(\widetilde C_{ea}P+P^\top\widetilde C_{ea}^\top
+                         -P^\top\sym(\widetilde B_a)P)
+ \label{eq:directional-center}
+\end{equation}
+with radius
+\begin{equation}
+ \begin{aligned}
+ R_Q={}&2E_{C,ea}\|P\|_2+E_{B,a}\|P\|_2^2\\
+ &+\beta_a(\rho_P+E_{C,ea}+E_{B,a}\|P\|_2)^2+\eta_Q.
+ \end{aligned}
+ \label{eq:directional-transport}
+\end{equation}
+Add the parent-Gram error and subtraction allowance to obtain the child-Gram radius. Here $\sym$ takes the symmetric part of a matrix; $\eta_g,\eta_Q$ cover center arithmetic, and the gain allowance also includes outward endpoint formation.
+\end{theorem}
+\begin{proof}
+In~\eqref{eq:direction-identity}, the center perturbation is at most $2E_h\|p\|_2+E_B\|p\|_2^2$ and the true residual norm is at most $\rho_p+E_h+E_B\|p\|_2$. Bound its quadratic remainder by Theorem~\ref{thm:pivot}, then add arithmetic error. Replacing $h,p$ by $C_{ea}^\top,P$ gives the same matrix identity; submultiplicativity bounds its remainder and two cross terms, proving~\eqref{eq:directional-transport}. Symmetrizing the computed pivot preserves the exact symmetric target and is included in the arithmetic allowance.
+\end{proof}
+
+% P:N3
+The benefit is visible in an isolated flip with effective coefficient $\omega=64$ and opinions $(1,-1)$. Here $B=\diag(129,-1/129)$, but $h=(16,0)$ and the exact solution is $(16/129,0)$: the score uses only the first direction. More generally, $p_*=B^{-1}h=JU^\top(A+\Delta)^{-1}s$ gives $\|p_*\|_2\le2\sqrt{\omega}\|s\|_\infty$. Directional bounds follow this actual solve direction. A normwise comparator instead controls the whole inverse and provides a convenient bound on accumulated transfer error.
+
+\begin{theorem}[Normwise comparator and accumulation]\label{thm:normwise}
+Let $\widetilde T\in\R^{r_e\times r_e}$ approximate $B^{-1}$ and let $\eta_T\ge\|I-\widetilde B\widetilde T\|_2$ be verified. Then
+\begin{equation}
+ E_T=\beta[\eta_T+E_B\|\widetilde T\|_2]
+ \label{eq:inverse-error}
+\end{equation}
+bounds the inverse-trial error. For centers $\widehat g_n=\fl(\widetilde h^\top\widetilde T\widetilde h)$ and $\widehat G'_n=\fl(\widetilde G-\widetilde C\widetilde T_a\widetilde C^\top)$, valid radii are
+\begin{equation}
+ \begin{aligned}
+ R_n={}&\beta(2\|\widetilde h\|_2E_h+E_h^2)
+       +\|\widetilde h\|_2^2E_T+\eta_n,\\
+ E'_G={}&E_G+\beta_a(2\|\widetilde C\|_2E_C+E_C^2)\\
+       &+\|\widetilde C\|_2^2E_{T,a}+\eta_{\rm upd}.
+ \end{aligned}
+ \label{eq:normwise}
+\end{equation}
+Here $\eta_n$ and $\eta_{\rm upd}$ bound score-center and Gram-update arithmetic, including subtraction; $C=C_{ea}$ in the transfer expression.
+\end{theorem}
+\begin{proof}
+The identity $B^{-1}-\widetilde T=B^{-1}[(I-\widetilde B\widetilde T)+(\widetilde B-B)\widetilde T]$ proves~\eqref{eq:inverse-error}. Writing $d=h-\widetilde h$, expand the score difference as $2d^\top B^{-1}\widetilde h+d^\top B^{-1}d+\widetilde h^\top(B^{-1}-\widetilde T)\widetilde h$. The three norm bounds prove the first radius. The same expansion for $C^\top$ proves the second, with center arithmetic and subtraction included.
+\end{proof}
+
+% P:N4
+A policy may choose the valid enclosure with the smaller radius, retaining that enclosure's own center; the directional and normwise centers need not coincide. To understand repeated maintenance, let $c_\nu=\|\widetilde C_{e,a_\nu}\|_2$, $\xi_\nu=E_{C,\nu}$, and $\zeta_\nu=E_{T,\nu}$ at commit $\nu$. Iterating the normwise bound gives
+\begin{equation}
+ E_e(j)\le E_e(0)+\sum_{\nu=1}^{j}
+ [\beta_\nu(2c_\nu\xi_\nu+\xi_\nu^2)
+       +c_\nu^2\zeta_\nu+\eta_\nu],
+ \label{eq:accumulation}
+\end{equation}
+where $E_e(j)$ is candidate $e$'s Gram-error bound after $j$ transfers and $\eta_\nu$ is the update allowance. Small cross responses reduce error growth, but uncertainty still accumulates. A policy can respond by refinement or by a \emph{numerical reanchor}: recomputing a response at the current version to replace its inherited error history. The next theorem states sufficient precision conditions under which such reanchors are unnecessary over a finite request.
+
+\begin{theorem}[Finite-horizon precision guarantee]\label{thm:finite}
+Assume $\|s\|_\infty\le1$, at most $b$ legal single-edit commits, a nonempty finite catalog with finite complete access, and $\delta>0$. At each decision, access and score candidates until every legal candidate is either covered by a current acceptance/stopping cut or has a certified score interval; scoring all remaining candidates is permitted. The empty catalog stops immediately. Put $w=\max_e\omega_e$, $k=\sqrt{2w}$, $\beta=1+2w$, and
+\begin{equation}
+ \begin{aligned}
+ a_0&=4k+4,&c_0&=k^2+a_0,\\
+ t_0&=\beta(1+2\beta a_0),\\
+ \ell_0&=\beta(2c_0a_0+a_0^2)+c_0^2t_0+1,\\
+ H_b&=a_0+b\ell_0,&\bar h&=\sqrt2k+a_0,\\
+ F_0&=\beta(2\bar h a_0+a_0^2)
+       +\bar h^2\beta(1+2\beta H_b)+1.
+ \end{aligned}
+ \label{eq:finite-constants}
+\end{equation}
+Use basis assembly that preserves endpoint support. Suppose each true residual, each input-assembly error, and each complete allowance for local arithmetic used in the enclosures is certified at most $\eps$ in its stated norm, including block responses, small inverse trials, and endpoint formation. If
+\begin{equation}
+ \eps\le\min\{1/4,\,1/(4\beta H_b),\,\delta/(8F_0)\},
+ \label{eq:finite-eps}
+\end{equation}
+a policy can retain and transfer inherited views without numerical reanchors, provided each winner pivot uses a current certified response block for that transition. It uses at most $N+b$ response blocks, where $N$ counts distinct candidates first materialized on the trajectory, and reuses a qualifying resident winner block when possible.
+\end{theorem}
+
+% P:N5
+The theorem gives a sufficient precision for a finite request with positive tolerance; Appendix~\ref{app:finite} proves the bound. Its premise includes attainable certified arithmetic, and its cost bound counts response blocks. Exact-mode requests ($\delta=0$) use the current-catalog interval tests together with the equality evidence below; their completion depends on those tests settling the comparison.
+
+\subsection{Exact Ties in the Same Decision Contract}
+% P:N6
+Refining two independent intervals need not separate gains that are exactly equal. A structural relation can provide the missing evidence: relabeling vertices may preserve the parent problem while mapping one edited child to another. Conjugacy expresses this relabeling as a permutation of matrix rows and columns. The online resolver checks the restricted case of a single vertex swap that preserves the current parent and exact opinion.
+
+\begin{proposition}[Objective equality by conjugacy]\label{prop:equality}
+Let legal child operators be $A_T^{(e)}=A_T+\Delta_e$ and $A_T^{(f)}=A_T+\Delta_f$. If a permutation matrix $P\in\R^{n\times n}$ satisfies $A_T^{(f)}=P A_T^{(e)}P^\top$ and $Ps=s$, then $g(e\mid T)=g(f\mid T)$.
+\end{proposition}
+\begin{proof}
+Orthogonality gives $(A_T^{(f)})^{-1}=P(A_T^{(e)})^{-1}P^\top$ and $P^\top s=s$. Hence the two child quadratic forms are equal; subtracting each from the common parent energy proves equal gains.
+\end{proof}
+
+% P:N7
+The executable witness checks exact opinion invariance, current legality, and equal edit kind and coefficient. It verifies $PA_TP^\top=A_T$ from affected sparse rows and checks the sparse update mapping, establishing full child conjugacy without constructing both children. Its record binds the parent version, operator and opinion digests, endpoints, and numerical units; a commit requires a new check. Once equality is proved, the intersection of the two certified intervals encloses their common gain.
+
+% P:N8
+Equality completes a supported pairwise comparison within the full decision test. Acceptance requires positive gain and coverage of rivals with larger gains or earlier identifiers. If a witness changes the provisional winner, the service obtains that candidate's own response before committing. All four paths use the same single-swap resolver and include its cost in service execution. The next section joins these evidence sources into a request.

@@ -1,0 +1,39 @@
+Typesetting dependencies
+=======================
+Compiler: pdfLaTeX (TeX Live 2024 or later is recommended; Overleaf default works).
+Class: IEEEtran 1.8b (2015/08/26), unmodified, bundled in IEEEtran.cls.
+Bibliography style: official IEEEtran.bst, unmodified, bundled.
+Sources: https://ctan.org/pkg/ieeetran
+         https://mirrors.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran.cls
+         https://mirrors.ctan.org/macros/latex/contrib/IEEEtran/bibtex/IEEEtran.bst
+Copyright and license notices are retained inside the official files.
+
+All loaded packages are standard TeX Live / Overleaf packages:
+fontenc, inputenc, amsmath, amssymb, amsthm, bm, graphicx, booktabs,
+tabularx, array, multirow, enumitem, float, microtype, cite, url, hyperref.
+IEEEtran selects Times-compatible text; the math is Computer Modern/AMS,
+as in the supplied PDF. No proprietary fonts, shell escape, or external
+services are required to compile the manuscript.
+
+Standard manual compilation:
+  pdflatex main.tex
+  bibtex main
+  pdflatex main.tex
+  pdflatex main.tex
+Or run bash build.sh from the extracted project.
+
+Experiment reproduction
+
+Use Python 3.11 and install the versions in requirements.txt. The online
+promotion screens, drift-index passes, fused CSR residuals and Jacobi-PCG kernels compile C shared libraries with
+gcc or cc on PATH. The measured direct and symbolic runs use SuiteSparse
+CHOLMOD and its BLAS dependencies. Build tools/cholmod_bridge.c and
+tools/scale_symbolic.c as separate shared libraries against the same CHOLMOD
+headers and runtime. Set JCERT_CHOLMOD_LIB and JCERT_SCALE_SYMBOLIC to their
+respective absolute paths. On Windows include the runtime DLL directory
+in PATH. The benchmark driver fixes numerical-library threading to one.
+
+Run python tools/reproduce.py --check to verify the released data. Run
+python tools/reproduce.py --rerun to rebuild the measured cohorts from the
+released datasets and the fixed safe-order inputs. The scale study records
+symbolic fill and any observed numerical resource limit in its own files.

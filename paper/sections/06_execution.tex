@@ -1,0 +1,53 @@
+\section{Versioned Execution and Complete Cost}
+\label{sec:execution}
+
+% P:X1
+Algorithm~\ref{alg:service} combines coverage, scoring, and commits into a versioned request. Each decision starts from a certified equilibrium, and the access path orders cached and new candidates. Scored intervals, endpoint exclusions, and unseen bounds together cover the current catalog. A stronger incumbent justifies further exclusions within a version; a commit advances the response summaries and coverage to the child. H, G, and S bound candidate batches, whereas D's index query can return a catalog-sized union.
+
+\begin{algorithm}[t]
+\caption{Certified current-catalog service}
+\label{alg:service}
+\begin{algorithmic}[1]
+\Require Root operator, exact opinion $s$, catalog, budget $b$, tolerance $\delta$
+\State $T\gets\varnothing$; bind graph, opinion, units, and candidate identities
+\While{$|T|<b$}
+  \State Certify the current equilibrium $z_T$; open current coverage
+  \State Initialize the incumbent; recheck warm candidates in access order
+  \While{true}
+    \If{a positive $\delta$-optimal edit is proved, canonical when $\delta=0$}
+       \State Let $a$ be that edit; obtain its own certified response; break
+    \ElsIf{all remaining upper bounds are at most $\delta$}
+       \State \Return certified tolerance stop
+    \ElsIf{no permitted access or refinement step remains}
+       \State \Return unresolved, with any previously certified prefix
+    \EndIf
+    \If{an access step is available}
+       \State Advance access and update the unseen bound
+       \State Apply certified endpoint screens; update exclusions
+    \EndIf
+    \State Obtain needed responses by reuse, transfer, or solve
+    \State Score or refine contenders; apply permitted equality checks
+  \EndWhile
+  \State Commit $a$; transfer requested Grams; $T\gets T\cup\{a\}$
+  \State Re-establish coverage if another decision is reached
+\EndWhile
+\State \Return budget stop and the certified committed sequence
+\end{algorithmic}
+\end{algorithm}
+
+% P:X1a
+\textbf{Evaluated policies.} The main D/S/H/G services use fixed dyadic maintenance: directional score and transfer bounds on grids with power-of-two denominators. They reuse transferred Grams and share the single-swap resolver. State correction and refreshes of candidate Grams have separate roles. The fixed-catalog studies additionally evaluate the response planner below and adaptive policies for radius selection and numerical reanchoring.
+
+% P:X2
+\textbf{Pricing response reuse.} The fixed-catalog planner compares direct solves with sharing a winner response, including the cost of obtaining that block. If only a child factorization remains, set $X=(A+U_aJ_aU_a^\top)^{-1}U_a$ and $H_a=I-J_aU_a^\top X\in\R^{r_a\times r_a}$. Since $AX=U_aH_a$ and $H_a=B_a^{-1}J_a$ is nonsingular, the parent response is $Y_a=XH_a^{-1}$. Checking its parent-equation residual, including right-hand-side assembly, certifies the recovered block.
+
+% P:X3
+Let $C$ count first candidate response blocks, $F_r$ refreshes, $W$ separately acquired winner blocks, and $R$ numerical reanchors. A block has one right-hand-side (RHS) column for an insertion or two for a flip; each acquisition is charged once, with state solves separate. For predicted direct demand $N_d$, solve time per block $\bar\tau$, transfer time $T_{\rm tr}$, and other copying or scheduling cost $T_{\rm extra}$, sharing is favored when
+\begin{equation}
+ (N_d-C-F_r-W-R)\bar\tau>T_{\rm tr}+T_{\rm extra}.
+ \label{eq:planner}
+\end{equation}
+The estimate selects a response route; the common decision rules certify its output.
+
+% P:X4
+\textbf{Complete-service cost.} The primary metric combines structural loading and setup with all request work: coverage preparation, response acquisition, maintenance, decision certification, commits, and trace recording. Process wall time additionally includes startup, fixture validation, and checkpoints. Independent full-catalog checking is timed separately. Work counters distinguish candidates, endpoint rows, Gram materializations, response blocks, and scalar RHS columns so that measured cost can be traced to the operations that produce it.

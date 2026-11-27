@@ -1,0 +1,34 @@
+{
+  "schema": "v4-execution-budget-1",
+  "numeric_budget_seconds": 1200,
+  "verification_reserve_seconds": 120,
+  "category_limits": {
+    "micro": {
+      "seconds": 120,
+      "memory_bytes": 2147483648
+    },
+    "invariance": {
+      "seconds": 180,
+      "memory_bytes": 2147483648,
+      "max_processes": 4
+    },
+    "formal": {
+      "seconds": 180,
+      "memory_bytes": 2147483648,
+      "max_processes": 36
+    },
+    "analysis": {
+      "seconds": 120,
+      "memory_bytes": 2147483648
+    },
+    "delivery_check": {
+      "seconds": 120,
+      "memory_bytes": 2147483648
+    }
+  },
+  "numeric_threads": 1,
+  "cpu": 0,
+  "rss_vms_sample_ms": 100,
+  "schedule": "one root scheduler; no concurrent numerical task",
+  "stop_policy": "retain all attempts; no replacing completed workers; no scientific runtime changes after formal freeze"
+}

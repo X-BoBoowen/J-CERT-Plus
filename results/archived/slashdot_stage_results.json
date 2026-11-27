@@ -1,0 +1,82 @@
+{
+  "stages": [
+    {
+      "file": "v2/raw_b/000_Slashdot_independent_H_r0.json",
+      "status": "timeout",
+      "returncode": -9,
+      "process_wall_seconds": 600.1059425960011,
+      "completed_requests": 0
+    },
+    {
+      "stage": "B2_Q1",
+      "method": "H",
+      "repeat_id": 0,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B2_Q1",
+      "method": "S",
+      "repeat_id": 0,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "H",
+      "repeat_id": 0,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "S",
+      "repeat_id": 0,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "H",
+      "repeat_id": 1,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "S",
+      "repeat_id": 1,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "H",
+      "repeat_id": 2,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    },
+    {
+      "stage": "B3_Q4",
+      "method": "S",
+      "repeat_id": 2,
+      "status": "not_run_gate_failed",
+      "reason": "B1 root preparation did not complete"
+    }
+  ],
+  "D": {
+    "status": "not_started_memory_preflight",
+    "minimum_pool_and_weights_bytes": 57342152549,
+    "mandatory_arrays": {
+      "i_int32": 13492271188,
+      "j_int32": 13492271188,
+      "flip_bool": 3373067797,
+      "weight_int64": 26984542376
+    },
+    "memory_limit_bytes": 4294967296,
+    "ordinal_capacity_admitted": false,
+    "required_ordinal_bound": "M < 2^31",
+    "scope": "this exact explicit representation, not an information-theoretic bound"
+  },
+  "branch_wall_seconds": 600.1182418440003
+}

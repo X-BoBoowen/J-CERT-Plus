@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-26T04:18:05.346348+00:00",
+  "selection_status": "frozen_from_existing_records_before_new_solves",
+  "scope": "C1 deterministic seven-parent development selection",
+  "source": "V2 raw_a and frozen v2_runner.py/a2_session.py schema",
+  "code_digest": {
+    "source_binding_sha256": "f5260dccf3f92b252a954839129b7737b3d510789e63c90379074dccbbd79c57",
+    "v2_runner_sha256": "05eed277dd4de1338c8a47305c2a4e76545e469825315717d4c6b60d4893119b",
+    "a2_session_sha256": "8bf715645d21f966c841af6b5241013bcf8026856f6ed39e204f83d35a88d678"
+  },
+  "protocol_digest": "b846b2a8eec9805e8fa9dc788eae8b146463cc9c18636da935a7716e9674b810",
+  "input_digest": "ef1e835f6d97a50fb0cc50ab42defefa20b10a6f23fd70f4d28709b28b829780",
+  "status": "frozen",
+  "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+  "cost": {
+    "category": "static_metadata_selection",
+    "numerical_process": false,
+    "wall_seconds": null
+  },
+  "order_policy": "Six old cells in Alpha/OTC then slow/independent/signed-neighbor order; H repeat0; query position then epoch. Retained raw schema cannot certify both-family competitiveness, so select q1 initial in each cell. Append the real Alpha q1 epoch4 unresolved parent.",
+  "rows": [
+    {
+      "selection_id": "Alpha/slow/q1/epoch1",
+      "graph": "Alpha",
+      "stream": "slow",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1bb419f89369cc92f78f71299b4c09b48b0d6ab87c3249914f1a85b098c7ed21",
+      "opinion_hash": "e4944563512e6345e04f56d90d774f26a5b47c46cb3f6d15160f06725f0848cf",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/002_Alpha_slow_H_r0.json",
+      "source_sha256": "da1c4191006b99b15b2b12f3ff2e7ec048f93e6830c05ef579221fc4cb13adb0",
+      "input_digest": "7697774b85354e1b76c20070aa1ab2fc2ff302d99f8cb77cbd702afeba0bd282",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "Alpha/independent/q1/epoch1",
+      "graph": "Alpha",
+      "stream": "independent",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1bb419f89369cc92f78f71299b4c09b48b0d6ab87c3249914f1a85b098c7ed21",
+      "opinion_hash": "e0306bd9dfbd5c5327aff25532a1105c154c467f915802fb964b30682c60d2a6",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/004_Alpha_independent_H_r0.json",
+      "source_sha256": "e700feeb53cadd38ffc872fbcd7ca9dc70fbfa0e722b677afd866ca9e3d6f330",
+      "input_digest": "7df2a983a325c58de13642747fa74603cf0480b3a68097c892d3950f066dc3aa",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "Alpha/signed-neighbor/q1/epoch1",
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1bb419f89369cc92f78f71299b4c09b48b0d6ab87c3249914f1a85b098c7ed21",
+      "opinion_hash": "542198eb265966c679285a978216d35880ed5169d894410819aa8e83012d7844",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/006_Alpha_signed-neighbor_H_r0.json",
+      "source_sha256": "a095da9a323bfd0a61115cabfbe8f7bd3cb821a0414e8f8e3e2ab26b4cbf6c16",
+      "input_digest": "074a19dc9ea7d85c8c3eb67a9b2ce80eca91cb1fdf43bc28ae525de3702ddb49",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "OTC/slow/q1/epoch1",
+      "graph": "OTC",
+      "stream": "slow",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1ecb273f7e08f8c10a4f48ae042ef8fb40d8863b1a4d73aabd671586c5dbade6",
+      "opinion_hash": "5d145c17b5a08df11c94ce40897b30d4c24918d3cfc5868ea6f714a7aa4ba2c7",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/011_OTC_slow_H_r0.json",
+      "source_sha256": "d353395c71fbfbfeef8808a2eba272600165f11bb571c061a2759325a81b1c9e",
+      "input_digest": "aa1ebce73184ef07a8e0d54faed507223c30c14c88bf1deb4b732263b5ca0132",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "OTC/independent/q1/epoch1",
+      "graph": "OTC",
+      "stream": "independent",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1ecb273f7e08f8c10a4f48ae042ef8fb40d8863b1a4d73aabd671586c5dbade6",
+      "opinion_hash": "8ec6d8292754b587e71b2df90c5cdd3969a1f091b2b877022533f34020dd77f6",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/013_OTC_independent_H_r0.json",
+      "source_sha256": "073e8693707d7048df6d1767d2e4cbb86a01ed8b21e0dea6031e761e95f4540d",
+      "input_digest": "c8f5831fd1fc62e78d0086904ed745a89d8565ebae648f9de2eda86347054b22",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "OTC/signed-neighbor/q1/epoch1",
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 1,
+      "parent_version_id": "1ecb273f7e08f8c10a4f48ae042ef8fb40d8863b1a4d73aabd671586c5dbade6",
+      "opinion_hash": "167eabcf6580dd7652ddc817fd1a5cae5764a0ef81fcbad28520b3200ad7735f",
+      "chosen_prefix": [],
+      "source": "v2_received/evidence/v2/raw_a/015_OTC_signed-neighbor_H_r0.json",
+      "source_sha256": "13daf29799d124813dca4261a9c0174156bc47e712a0e05ff056c45b567406d1",
+      "input_digest": "ed40fb507993a0f32740fa0cf808e25262d9c4264f8fb978bc65156041d8f34a",
+      "scope": "one development parent per old V2 cell",
+      "status": "q1_initial_fallback",
+      "competition_classification": "cannot_classify",
+      "reason": "The frozen runner uses audit=False. The saved decision/access schema lacks parent centers/radii and separate certified maxima for both edit families. A failed global insertion exclusion cannot establish that both families are competitive. Use the prescribed q1 initial fallback; do not claim that competitive states do not exist.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    },
+    {
+      "selection_id": "Alpha/signed-neighbor/q1/epoch4/unresolved",
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "method": "H",
+      "repeat_id": 0,
+      "query_position": 1,
+      "epoch": 4,
+      "parent_version_id": "3b6b2f555abe6c58ea901b11d1bceecc80b8888923c668e2b36a78ba55023734",
+      "opinion_hash": "542198eb265966c679285a978216d35880ed5169d894410819aa8e83012d7844",
+      "chosen_prefix": [
+        6725985,
+        3926607,
+        13138219
+      ],
+      "source": "v2_received/evidence/v2/raw_a/006_Alpha_signed-neighbor_H_r0.json",
+      "source_sha256": "a095da9a323bfd0a61115cabfbe8f7bd3cb821a0414e8f8e3e2ab26b4cbf6c16",
+      "input_digest": "074a19dc9ea7d85c8c3eb67a9b2ce80eca91cb1fdf43bc28ae525de3702ddb49",
+      "scope": "the actual retained unresolved parent",
+      "status": "selected_real_unresolved",
+      "competition_classification": "cannot_classify",
+      "reason": "Prespecified real unresolved state; relation classification and full decision verification are separate diagnostics.",
+      "cost": {
+        "category": "static_metadata_selection",
+        "wall_seconds": null
+      }
+    }
+  ],
+  "weights": {
+    "primary": "1/16",
+    "additional_probe_weights": null,
+    "note": "No added weight probes selected."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "created_utc": "2026-11-25T17:11:34.204389+00:00",
+  "manifest_self_exclusion": "This manifest lists every other member. Its own bytes and SHA-256 are bound by the external PACKAGE_MANIFEST.json, avoiding a circular self-hash.",
+  "members": [
+    {
+      "bytes": 2435805,
+      "path": "baseline_r15/experimental_records/legacy_v6/datasets/Slashdot.npz",
+      "sha256": "78d004ff0f3cab226ef2190244a3f59675337adcbd7c445fa98a343964ba86b0",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_independent_confirmation-1.npz",
+      "sha256": "34afb7fbc457d0f612b3a5638e37825c57a6c1b9044105f8b0f43414490bfe7b",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_independent_confirmation-2.npz",
+      "sha256": "2267cbc25967950422e8582f32f276d96cc37545df81dc8fdde69f81868be6b1",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_signed-neighbor_confirmation-1.npz",
+      "sha256": "cb4ede273e01b458ebcc03b6ef827c1ec107ca2b276f7d63ed9c73dc226f5ce9",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_signed-neighbor_confirmation-2.npz",
+      "sha256": "a938bb924aa58df322bfc37223a7b5895a2090453c796785bbbb2c2f9d16cd1c",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_slow_confirmation-1.npz",
+      "sha256": "21757c899c979d7d54837ec36776b429d25feec1f8fc62aafd2066151f7cc28e",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "data/a2/A2-confirmation-v1/Alpha_slow_confirmation-2.npz",
+      "sha256": "a7edfee6a993649adc445d325a303fc8edf8d27b37944cb00da1ac286b42d4db",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_independent_confirmation-1.npz",
+      "sha256": "42f7928ef90b91022318605757ae8712cdfef6a517860cc83354fa407acf1649",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_independent_confirmation-2.npz",
+      "sha256": "4043a8135b779e65186921d6a33a5130d6d505b05ef9048def2a46702bd674f7",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_signed-neighbor_confirmation-1.npz",
+      "sha256": "07c1eb81cab3ea30c36605ddd0382bb6665bf6b6c9ec65c1fafd1fe468b0088a",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_signed-neighbor_confirmation-2.npz",
+      "sha256": "1a8eed7968cd0f5a0789277cba0eb8aa36a87573672c62135b5a879910e846d0",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_slow_confirmation-1.npz",
+      "sha256": "9c2e3680e6514e1454614727b9e6f53edc146d22b5eb997570cb6e1681874f3c",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 188462,
+      "path": "data/a2/A2-confirmation-v1/OTC_slow_confirmation-2.npz",
+      "sha256": "6297fb7a677d7a689f9be0ad7eb946dd4f4e839db1f81a254f2925503e2463ef",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 1521,
+      "path": "data/projected/Alpha_metadata.json",
+      "sha256": "71e03a924cf7fef56e2a47abf28b7a304073b67811ca600b310f525e42459aa9",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 35646,
+      "path": "data/projected/Alpha_nodes.csv",
+      "sha256": "9ba9ac37e5745374d19eb7e2cf9d369d9f2ae87344ec59577acad50fffc4ccfc",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 57164,
+      "path": "data/projected/Alpha_unit.npz",
+      "sha256": "493dec030b6933a41ad36faf6c23b68d6237ba8641ea507ed93d14e976fb5018",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 73103,
+      "path": "data/projected/Alpha_weighted.npz",
+      "sha256": "af41cfe706b6134f45a8bbcd7932088062b10b279b7d09505d677a517e4ee5bd",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 1530,
+      "path": "data/projected/OTC_metadata.json",
+      "sha256": "660ad27f6a457619e77d5b4745f8a58cfe30c9905345f46d5049dd19c890a38d",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 56693,
+      "path": "data/projected/OTC_nodes.csv",
+      "sha256": "9d80ace4e47fd62011e7a732a58ddffdb772888f2b165847eac0f59519babc79",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 84793,
+      "path": "data/projected/OTC_unit.npz",
+      "sha256": "cfc8f6c6501c2b1afe0b78772134bfdd90e528c165f4fd8757f7f1d89ff7af15",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 107503,
+      "path": "data/projected/OTC_weighted.npz",
+      "sha256": "7eaf0499f54956b2502351e67ad4bcd4afeed7d9550b51896354f74f690d09db",
+      "source_role": "original_immutable"
+    },
+    {
+      "bytes": 121326,
+      "path": "v2/inputs/Alpha_independent.npz",
+      "sha256": "7df2a983a325c58de13642747fa74603cf0480b3a68097c892d3950f066dc3aa",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 121326,
+      "path": "v2/inputs/Alpha_signed-neighbor.npz",
+      "sha256": "074a19dc9ea7d85c8c3eb67a9b2ce80eca91cb1fdf43bc28ae525de3702ddb49",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 121326,
+      "path": "v2/inputs/Alpha_slow.npz",
+      "sha256": "7697774b85354e1b76c20070aa1ab2fc2ff302d99f8cb77cbd702afeba0bd282",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 188462,
+      "path": "v2/inputs/OTC_independent.npz",
+      "sha256": "c8f5831fd1fc62e78d0086904ed745a89d8565ebae648f9de2eda86347054b22",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 188462,
+      "path": "v2/inputs/OTC_signed-neighbor.npz",
+      "sha256": "ed40fb507993a0f32740fa0cf808e25262d9c4264f8fb978bc65156041d8f34a",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 188462,
+      "path": "v2/inputs/OTC_slow.npz",
+      "sha256": "aa1ebce73184ef07a8e0d54faed507223c30c14c88bf1deb4b732263b5ca0132",
+      "source_role": "frozen_runtime_inputs"
+    },
+    {
+      "bytes": 2628750,
+      "path": "v2/inputs/Slashdot_independent.npz",
+      "sha256": "d2c582459006ab5a41a6e10f287addc721879cbad0f367ed61638e2a508506c6",
+      "source_role": "frozen_runtime_inputs"
+    }
+  ],
+  "notes": [],
+  "package_kind": "INPUTS",
+  "payload_bytes": 8270600,
+  "payload_member_count": 28,
+  "root_relative_paths": true,
+  "schema": "jcert-plus-package-members-v1",
+  "separate_package_references": {
+    "bindings": [
+      "protocol/A2_TIE_RETEST_INPUTS.json",
+      "v2/INPUTS.json"
+    ],
+    "code_archive": "J_CERT_Plus_V2_Code_20261126.zip",
+    "evidence_archive": "J_CERT_Plus_V2_Evidence_20261126.zip"
+  }
+}

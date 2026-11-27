@@ -1,0 +1,50 @@
+{
+  "schema": "jcert-v3-source-limited-1",
+  "date_local": "2026-11-26",
+  "timezone": "Asia/Tokyo",
+  "status": "frozen_for_standalone_mathematical_checks_only",
+  "attached_plan_sha256": "7cdc03d736bd37e3599ddcf9f599c28f9c253790a30141f6b26f8d07717880b7",
+  "requested_v2_commit": "4c2c7b7e84c7c03ee56d45453fea6950c94817bd",
+  "actual_v2_commit_verified": null,
+  "numeric_budget_seconds": 10800,
+  "verification_reserve_seconds": 600,
+  "scheduler": "root only, serial, control/budget_run.py",
+  "micro_limit_seconds": 120,
+  "micro_memory_limit_bytes": 2147483648,
+  "memory_limit_kind": "RLIMIT_AS",
+  "numeric_threads": 1,
+  "delta": "0",
+  "new_seeds": false,
+  "independent_oracle": "Python Fraction rational Gaussian elimination on directly constructed physical parent/child A=I+D-W",
+  "oracle_fixtures": [
+    "signed_path4_exact",
+    "signed_path4_perturbed_second_opinion",
+    "signed_path4_zero",
+    "negative_edge_weight64",
+    "empty_pair_insert_1_over_16"
+  ],
+  "mechanism_probe_sizes": [
+    8,
+    32,
+    128
+  ],
+  "mechanism_probe_scope": "mathematical empty-graph block-pruning check and small irregular graph domain/bound check; not production G, H or Q4",
+  "run_order": [
+    "expected_missing_oracle_test_red_if_available",
+    "oracle_unit_tests",
+    "micro_fixture_report",
+    "block_probe_tests",
+    "block_probe_report",
+    "fresh_archive_import_and_relevant_tests"
+  ],
+  "source_dependent_work": {
+    "A1": "not_started_missing_evidence",
+    "A3_production": "not_started_missing_code_source",
+    "B": "not_started_missing_inputs_evidence",
+    "C_actual_H_and_G": "not_started_missing_code_inputs_evidence",
+    "C_timing": "not_run_gate_failed",
+    "D": "not_run_gate_failed"
+  },
+  "stop_rule": "Do not reconstruct V2 from prose, invent inputs, implement replacement production runtime or treat mathematical probes as real-data evidence.",
+  "claim_rule": "Reference oracle decisions do not establish production path, rounding, certificates, or rejection behavior."
+}

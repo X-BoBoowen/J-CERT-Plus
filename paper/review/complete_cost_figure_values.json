@@ -1,0 +1,788 @@
+{
+  "old": [
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.844522767005401,
+        6.7109485840046545,
+        7.388756310003373
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        25.931434367001202,
+        24.621035181997286,
+        27.689998030004062
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.3439188209995336,
+        2.3164444050016755,
+        2.515156613000727
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.9924305910026305,
+        6.394030349001696,
+        7.311612696004886
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        26.119992443003866,
+        26.18526154299616,
+        27.72688810999898
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.5451362210005755,
+        2.4202913040062413,
+        2.723148870994919
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.629124502000195,
+        6.523495135006669,
+        7.465692831996421
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        26.641556155995204,
+        24.362393040002644,
+        27.635434471994813
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.4477346669955296,
+        2.3335841320003965,
+        2.6213724359986372
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.819345270992926,
+        6.527675507000822,
+        7.640049395002279
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        25.48504066899841,
+        27.186424392002664,
+        27.937015649000386
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.342870247994142,
+        2.3212592269956076,
+        2.543504782999662
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.985798513000191,
+        6.332475557002908,
+        7.2373223539980245
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        24.701339952003764,
+        24.45348658000148,
+        27.755351402996894
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.383765228998527,
+        2.3907853400014574,
+        2.677768586003367
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        6.265814178004803,
+        6.384582357997715,
+        7.128368556997884
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        24.730889844006015,
+        25.089677972999198,
+        28.32477030500013
+      ],
+      "n": 3
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        2.4231245139999373,
+        2.334806208997179,
+        2.678856643000472
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        15.903131325998402,
+        17.11389422099819,
+        18.08262106899565
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        64.5289099640031,
+        63.77964067300127,
+        72.88904786299463
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        3.844849402001273,
+        3.8838091690013243,
+        4.313207879000402
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        18.231772617000388,
+        16.39683763100038,
+        18.00200959799986
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        70.2140005600013,
+        72.75126149600328,
+        72.279357110001
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        4.251127095998527,
+        4.036524596998788,
+        4.233862729997782
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        17.30936239100265,
+        19.87841112800379,
+        17.92756223699689
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        65.20815740300168,
+        72.63884958600102,
+        72.39003581499492
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        4.838224417002493,
+        4.362420821002161,
+        4.281166910001048
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        15.897382781000488,
+        17.66562520399748,
+        17.48731278899868
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        67.22276606999367,
+        71.15498520300025,
+        72.74156379299893
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        4.100276249002491,
+        4.343090704998758,
+        4.384161848993244
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        15.909415815996908,
+        16.97443444599776,
+        17.2938097389997
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        64.2602303110034,
+        72.89926253799786,
+        72.38620231000459
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-1",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        4.0444816410054045,
+        4.694270197000151,
+        4.470932216001529
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "D",
+      "complete": true,
+      "costs": [
+        17.74563056400075,
+        16.87707543000215,
+        17.357559946001857
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "S",
+      "complete": true,
+      "costs": [
+        65.75154183300401,
+        74.37657893900177,
+        72.40473894499155
+      ],
+      "n": 3
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "label": "confirmation-2",
+      "method": "H",
+      "complete": true,
+      "costs": [
+        4.075242746996082,
+        4.459588888003054,
+        4.498171813993395
+      ],
+      "n": 3
+    }
+  ],
+  "new": [
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "method": "D",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        7.960743106999871,
+        7.196002947002853,
+        7.398499996997998
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[0].methods.D"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "method": "S",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        27.733550600003582,
+        26.039787137999156,
+        27.03440057500302
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[0].methods.S"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "slow",
+      "method": "H",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        2.546002639002836,
+        2.6611667780016433,
+        3.6374093379999977
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[0].methods.H"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "method": "D",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        7.0805626820001635,
+        6.584186312002203,
+        7.589786339000057
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[1].methods.D"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "method": "S",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        27.20819151700198,
+        26.05075842700171,
+        27.05790178999996
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[1].methods.S"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "independent",
+      "method": "H",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        2.480973878999066,
+        2.4551378500000283,
+        2.5317289210015588
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[1].methods.H"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "method": "D",
+      "label": "unseen",
+      "complete": false,
+      "costs": [],
+      "n": 3,
+      "complete_workers": 0,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[2].methods.D"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "method": "S",
+      "label": "unseen",
+      "complete": false,
+      "costs": [],
+      "n": 3,
+      "complete_workers": 0,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[2].methods.S"
+      ]
+    },
+    {
+      "graph": "Alpha",
+      "stream": "signed-neighbor",
+      "method": "H",
+      "label": "unseen",
+      "complete": false,
+      "costs": [],
+      "n": 3,
+      "complete_workers": 0,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[2].methods.H"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "method": "D",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        19.328038828998615,
+        19.439603845999955,
+        17.79236468999443
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[3].methods.D"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "method": "S",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        69.2567532489993,
+        68.96772861799946,
+        70.35048763600207
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[3].methods.S"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "slow",
+      "method": "H",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        4.348756689001675,
+        4.236755789999734,
+        4.260129127997061
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[3].methods.H"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "method": "D",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        18.42718685700129,
+        16.530711885998244,
+        19.8335435110057
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[4].methods.D"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "method": "S",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        67.61188603899791,
+        67.04638710100153,
+        69.46883435400377
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[4].methods.S"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "independent",
+      "method": "H",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        4.31007493099969,
+        4.242133879002722,
+        4.203226656005427
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[4].methods.H"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "method": "D",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        18.47747071899903,
+        18.95758058699721,
+        18.42356539600587
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[5].methods.D"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "method": "S",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        68.54597202899822,
+        74.55715540599704,
+        70.53279560799638
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[5].methods.S"
+      ]
+    },
+    {
+      "graph": "OTC",
+      "stream": "signed-neighbor",
+      "method": "H",
+      "label": "unseen",
+      "complete": true,
+      "costs": [
+        4.8125797849970695,
+        4.415716871000768,
+        4.482326215991634
+      ],
+      "n": 3,
+      "complete_workers": 3,
+      "sources": [
+        "/workspace/scratch/faa1a8a62f06/editorial_20261126/paper/review/a_aggregate.json",
+        "cells[5].methods.H"
+      ]
+    }
+  ],
+  "incomplete_policy": "No complete-Q4 point; visibly retained cell",
+  "whiskers": "minimum-maximum over three repeats, not confidence intervals"
+}

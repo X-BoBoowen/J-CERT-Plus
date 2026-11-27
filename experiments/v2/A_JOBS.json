@@ -1,0 +1,488 @@
+[
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 0,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 1,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "Alpha",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "slow",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "independent",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "S",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "H",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  },
+  {
+    "graph": "OTC",
+    "stream": "signed-neighbor",
+    "repeat_id": 2,
+    "method": "D",
+    "stage": "A",
+    "requests": 4,
+    "budget": 15
+  }
+]

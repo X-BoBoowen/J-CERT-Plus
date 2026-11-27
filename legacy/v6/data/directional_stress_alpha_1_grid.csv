@@ -1,0 +1,3 @@
+w,b,rtol,beta,C,W,R,blocks,state_refines,direct_fallbacks,events,frac_small,frac_large,min_margin,accepted,stop_upper,max_residual,max_residual_cap,max_named,diagnostic_delta,prior_epsilon_star,prior_strict,baseline_R,baseline_state_refines,baseline_direct_fallbacks
+1,15,1e-07,3,60,14,0,74,0,0,795,1.0,0.0,0.0015023314348410477,15,,2.5589560054917085e-06,2.5590128822041188e-06,2.559012882204107e-06,1e-06,1.3637076653417136e-16,0,0,0,0
+1,20,1e-07,3,60,19,0,79,0,0,1010,1.0,0.0,0.001473254731809752,20,,2.5589560054917085e-06,2.5590128822041188e-06,2.559012882204107e-06,1e-06,1.0227877182745011e-16,0,0,0,0

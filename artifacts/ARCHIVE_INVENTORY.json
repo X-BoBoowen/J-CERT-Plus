@@ -1,0 +1,47 @@
+{
+  "schema": "jcert-public-archive-inventory-v1",
+  "archives": [
+    {
+      "path": "artifacts/frozen/V2_Code.zip",
+      "bytes": 12756250,
+      "sha256": "4d9d96167fdcaee440aced8b280a36118e0d142bc5d8550707316311d8433dfb",
+      "members": 201
+    },
+    {
+      "path": "artifacts/frozen/V2_Evidence.zip",
+      "bytes": 38725292,
+      "sha256": "1e98f70bef0c22fd2f6d8b528490ab42ceedf75c7427f292d9b58965c86b9fcf",
+      "members": 894
+    },
+    {
+      "path": "artifacts/frozen/V2_Inputs.zip",
+      "bytes": 4713040,
+      "sha256": "b643dde2a09cc5c6866a1295d9923480f53b5a6b426beb2b0c557949e4346308",
+      "members": 29
+    },
+    {
+      "path": "artifacts/frozen/V3_Code.zip",
+      "bytes": 185468,
+      "sha256": "e88a49aef90acb09d483dfd4c5016d4336c5a8a353b40087ef464cc5b4c4e7c3",
+      "members": 38
+    },
+    {
+      "path": "artifacts/frozen/V3_Evidence.zip",
+      "bytes": 6382325,
+      "sha256": "67096d7ddc7d52e3dfd5a1c3ae441a56daf4f273c3fbd76b9fa54e23691fca90",
+      "members": 247
+    },
+    {
+      "path": "artifacts/frozen/V4_Code.zip",
+      "bytes": 128545,
+      "sha256": "a8ec381746db4fab185511119c5eab6f1780692a4dbff4d0a156559244d18358",
+      "members": 32
+    },
+    {
+      "path": "artifacts/frozen/V4_Evidence.zip",
+      "bytes": 3104691,
+      "sha256": "cfe27334aee896c4ebb7116976ed979cbc873e978b3c78ed79caee8b2a2db065",
+      "members": 333
+    }
+  ]
+}

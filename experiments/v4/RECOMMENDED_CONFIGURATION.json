@@ -1,0 +1,29 @@
+{
+  "schema": "jcert-v4-recommended-configuration-1",
+  "recommended_access_method": "H",
+  "measurement_policy": "light_v1",
+  "constructor_legacy_default_retained": true,
+  "example": "A2Session(W, \"H\", measurement_policy=\"light_v1\")",
+  "alternative_access_method": "G",
+  "selection": {
+    "decision": "retain_H_insufficient_or_mixed",
+    "recommended_method": "H",
+    "current_default": "H",
+    "gate_passed": true,
+    "engineering_threshold": 0.1,
+    "significance_claim": false,
+    "additional_experiment_authorized": false,
+    "conditions": {
+      "G_base": true,
+      "H_base": false,
+      "G_repeat_stability": false,
+      "H_repeat_stability": false
+    },
+    "reason": "The frozen rule does not establish sufficient stable evidence to replace the H default."
+  },
+  "evidence": "v4/reports/hg_light_summary.json",
+  "runtime_commit": "9d09794b6a6de8a4c97f615abf3f3cae1f458b75",
+  "numerical_contract_changed": false,
+  "automatic_method_or_resolver_tuning": false,
+  "next_primary_work": "focused manuscript polishing under the stated evidence limits"
+}

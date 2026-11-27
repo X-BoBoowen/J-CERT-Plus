@@ -1,0 +1,120 @@
+\section{Current Coverage without Full Materialization}
+\label{sec:coverage}
+
+\subsection{Shared Endpoint Bounds}
+% P:F1
+To decide whether a candidate deserves a response solve, we first bound its gain using the current equilibrium at its endpoints. For $A=A_T$ and $z=A^{-1}s$, let $a_e=z^\top\Delta_e z$ and $v_e=\Delta_e z$. Substituting $s=Az$ into the inverse difference gives
+\begin{equation}
+ g_e=a_e-v_e^\top(A+\Delta_e)^{-1}v_e\le a_e.
+ \label{eq:tangent}
+\end{equation}
+The correction is nonnegative because the legal child operator is positive definite, even when $\Delta_e$ is an indefinite flip. Thus $a_e$ is a cheap gain upper bound: $\omega_e(z_i-z_j)^2$ for insertion and $-4\omega_ez_iz_j$ for a flip. We call it the \emph{tangent cap}. A tighter bound can still use only two endpoint coordinates and a $2\times2$ operator block.
+
+\begin{theorem}[Endpoint enclosures]\label{thm:endpoint}
+Let $Q=(i,j)$ be the candidate's endpoints. Subscripts $Q$ and $QQ$ restrict a vector and a matrix to those coordinates, and write $v_Q=(v_e)_Q$. Put $D_e=(A+\Delta_e)_{QQ}$ and $F_e=(I_2+\omega_e b_Qb_Q^\top)^{-1}$, where $b_Q=(1,-1)^\top$ and $I_2$ is the $2\times2$ identity. Then
+\begin{equation}
+ a_e-v_Q^\top F_ev_Q\le g_e\le a_e-v_Q^\top D_e^{-1}v_Q.
+ \label{eq:endpoint}
+\end{equation}
+For insertion, additionally,
+\begin{equation}
+ \frac{a_e}{1+2\omega_e}\le g_e\le
+ \frac{a_e}{1+\omega_e b_Q^\top A_{QQ}^{-1}b_Q}.
+ \label{eq:insertion-bound}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The child contains its positive-edge term, so $A+\Delta_e\succeq I+\omega_eb_eb_e^\top$. For a positive-definite matrix, the Schur-complement formula bounds a principal block of its inverse below by the inverse of that principal block. Inverse order therefore gives
+\[
+ D_e^{-1}\preceq((A+\Delta_e)^{-1})_{QQ}\preceq F_e.
+\]
+Substitution in~\eqref{eq:tangent} proves the first enclosure. For an insertion, the rank-one Sherman--Morrison identity~\cite{Hager1989} gives
+\[
+ g_e=\frac{a_e}{1+\omega_e b_e^\top A^{-1}b_e},\qquad
+ b_Q^\top A_{QQ}^{-1}b_Q\le b_e^\top A^{-1}b_e\le2.
+\]
+The last upper bound uses $A\succeq I$ and $\|b_e\|_2^2=2$, proving~\eqref{eq:insertion-bound}.
+\end{proof}
+
+% P:F2
+These bounds can be evaluated without a global response. Completing the square shows that any trial $p\in\R^2$ gives the upper bound $a_e-2p^\top v_Q+p^\top D_ep$. For an insertion, use the variational identity $b_e^\top A^{-1}b_e=\max_{x\in\R^n}(2b_e^\top x-x^\top Ax)$. A current nonedge has $A_{ij}=0$, so the trial supported on its endpoints with values $(1/A_{ii},-1/A_{jj})$ gives $b_e^\top A^{-1}b_e\ge1/A_{ii}+1/A_{jj}$. All paths may use this insertion-only denominator bound with the rank-one gain formula~\cite{bhalla2023local}. Section~\ref{sec:numerics} accounts for rounding.
+
+\subsection{The Explicit General Path}
+% P:F3
+For a supplied finite catalog with arbitrary positive insertion weights and magnitude-preserving flips, D stores one root tangent cap $u_e^{(0)}\ge a_e(z_0)$ per candidate, groups candidates by weight, and keeps endpoint posting lists. To make these caps current, D bounds equilibrium drift. At version $t$ with chosen set $T_t$, let root and current state centers have maximum-norm error radii $r_0,r_t$, and define $d_i=|\widetilde z_{t,i}-\widetilde z_{0,i}|+r_0+r_t$. Both exact states lie in $[-1,1]^n$, so factoring the insertion square or expanding the flip product gives
+\begin{equation}
+ g(e\mid T_t)\le u_e^{(0)}+4\omega_e(d_i+d_j).
+ \label{eq:drift}
+\end{equation}
+For a chosen drift threshold $\tau\ge0$, endpoints with $d_i,d_j\le\tau$ have bound $u_e^{(0)}+8\omega_e\tau$. The index inspects postings for vertices above this threshold and the remaining cap-ordered prefix that could reach the decision threshold. Uninspected candidates retain the corresponding drift bound. A new opinion rebuilds root caps; a commit updates their drift justification. D supports the general catalog at a storage cost of $O(M+n)$ for $M=|\mathcal C|$.
+
+\subsection{The Mixed Implicit Catalog}
+% P:F4
+H and G avoid that catalog allocation by exploiting a specific domain: every root nonedge permits an insertion at the same coefficient $\omega>0$, and every negative root edge permits a flip at its natural weight. Positive root edges contribute no candidate, and a chosen pair stays illegal for the request. With $m_G$ root edges and $F$ negative edges, the logical catalog size is
+\begin{equation}
+ M=\binom n2-m_G+F.
+ \label{eq:catalog-size}
+\end{equation}
+Unchosen root nonedges remain current nonedges. Arbitrary pair filters or insertion weights require a suitable enumerator or D. The evaluated service uses $\omega=1/16$ and $\alpha=1$.
+
+% P:F5
+Coverage starts from a certified approximate equilibrium $q\in\R^n$ with a common coordinate-error bound $r\ge0$, so $|z_i-q_i|\le r$. Allowing both endpoints to vary within this error gives the coarse caps
+\begin{equation}
+ \begin{aligned}
+ C^{\rm ins}_{ij}&=\omega(|q_i-q_j|+2r)^2,\\
+ C^{\rm flip}_{ij}&=\omega_{ij}\big[-4q_iq_j+
+                   4r(|q_i|+|q_j|+r)\big].
+ \end{aligned}
+ \label{eq:frontier-caps}
+\end{equation}
+They bound the square and product in the tangent caps. Centers and radii are represented on exact integer grids with checked scaling, so coarse coverage needs no candidate response. Candidates that survive these caps receive the finer endpoint tests of Theorem~\ref{thm:endpoint}.
+
+\subsection{H: Joint Row Frontier}
+% P:F6
+H organizes unordered vertex pairs into logical candidate rows, distinct from adjacency-matrix rows. This uses the ordered-row structure studied in matrix selection~\cite{kaplan2019rowsorted}, with an ordinary heap of current gain bounds. Sort vertices stably by $q_i$, and let $q_{(a)}$ denote the center at rank $a$. Row $a$ visits partner ranks $b=n-1,n-2,\ldots,a+1$. Its gap $q_{(b)}-q_{(a)}$ and insertion cap never increase. A heap stores the next entry, or \emph{head}, of each row, so its largest head bounds every unvisited insertion. Sparse root adjacency filters existing edges; chosen pairs are illegal, and already processed pairs retain separate current evidence. Flips form another list ordered by their weighted caps. The larger of the heap head and flip-list head bounds the union of both unvisited domains: this is H's \emph{joint row frontier}.
+
+\begin{theorem}[H coverage at every reached version]\label{thm:coverage}
+Under the mixed-domain assumptions above, the joint head is an upper bound on every unprocessed legal gain. If processed candidates retain current endpoint or score certificates, the joint head and those certificates cover $\mathcal C\setminus T$. Rebuilding from the child state after each commit preserves this invariant for the full request.
+\end{theorem}
+\begin{proof}
+Every legal insertion appears in one sorted row, whose current head bounds its unvisited entries. The heap maximum therefore bounds all unvisited insertions. Filtered root edges are outside that domain, chosen pairs are illegal, and processed pairs remain separately certified. The ordered flip head covers every unprocessed legal flip, including those with negative caps. Their maximum covers the disjoint legal union. Replacing an emitted candidate by a valid endpoint or score certificate preserves this coverage. After a commit, H certifies the child state, sorts again, and constructs new row and flip heads. The same argument applies at the next version. Induction covers the request; a fresh opinion starts at the root.
+\end{proof}
+
+% P:F7
+The frontier must preserve ties. At $\delta=0$, a hidden cap is pruned only if it is strictly below a positive incumbent lower bound $L$, retaining equal-gain candidates and earlier identifiers. Without a positive incumbent, a nonpositive cap excludes an edit. Equal centers, an empty insertion domain, or a flip-only frontier preserve this argument. Access order can differ from canonical order: identifiers govern the final decision.
+
+\subsection{G: Flip-First Diagonal Block Coverage}
+% P:G1
+G asks first whether a good flip can rule out the entire insertion class. The shared coarse insertion cap yields
+\begin{equation}
+ U_{\rm ins}=\min\{4\omega,\;\omega(\max_iq_i-\min_iq_i+2r)^2\}.
+ \label{eq:global-insertion}
+\end{equation}
+The range term maximizes~\eqref{eq:frontier-caps} over all pairs before legality filtering; $|z_i|\le1$ supplies the separate bound $4\omega$. G processes sparse flips first. If a certified flip lower bound strictly exceeds $U_{\rm ins}$ and all other flips are covered, no insertion blocks need be built. Otherwise G establishes insertion coverage through its own block partition, independently of H's rows.
+
+% P:G2
+A \emph{block bound} covers many pairs with one upper bound. Pair-block pruning appears in closest-pair queries~\cite{corral2000closestpair}; PathSim similarly applies cluster and candidate bounds before exact similarity scoring~\cite{sun2011pathsim}. G derives its bounds from the current equilibrium and operator diagonals. Order vertices stably by $q$. For a block $I\times J$, choose $D_{IJ}\ge0$ to upper-bound every $|z_i-z_j|$. Let $d_I,d_J\ge0$ be certified lower bounds on $\min_{i\in I}1/A_{ii}$ and $\min_{j\in J}1/A_{jj}$ for the current physical operator. The gap bound controls the numerator; the reciprocal-diagonal bounds control the denominator, which is at least one. Combining the nonedge bound above with~\eqref{eq:insertion-bound} gives, rounded upward,
+\begin{equation}
+ U_{IJ}=\min\left\{U_{\rm ins},\;
+ \frac{\omega D_{IJ}^{2}}{1+\omega(d_I+d_J)}\right\}.
+ \label{eq:block-insertion}
+\end{equation}
+This bounds legal nonedges in the block. A chosen insertion increases each of its two diagonal entries by $\omega$, whereas a flip leaves them unchanged. G reconstructs these current diagonals from the root operator and chosen set before using the bound.
+
+% P:G3
+G represents all unordered pairs by one triangular root block. Splitting a triangle gives two triangles and their cross rectangle; splitting a rectangle bisects its longer side. The children are disjoint and retain all parent pairs. Each pending block bounds its ungenerated legal descendants, and expansion replaces it by its children. Singleton triangles are empty; pair leaves filter root edges, chosen edits, and already processed candidates. The remaining flip tail has a separate upper bound. A \emph{warm} candidate has a cached Gram but still needs a current score or coverage. G may defer warm insertions while its whole-class or block bounds cover them. Strict cuts at positive thresholds retain possible equal-gain earlier identifiers. These invariants let G use the same response and decision layers as H while supplying its own complete coverage.
+
+\subsection{Access Work and Storage}
+% P:F8
+For H at version $t$, let $K_t$ count legal insertion emissions, including later endpoint rejections; $P_t$ count legal row pops skipped as processed or warm; $b_t$ count chosen edits; and $F_t^{\rm pop}$ count visited flips. With a supplied exclusion set and constant-time hash membership, frontier work is
+\begin{equation}
+ \begin{aligned}
+ &O\!\left(n\log n+(K_t+P_t+m_G+b_t)\log n\right)\\
+ &\qquad +O\!\left(F\log F+F_t^{\rm pop}\right).
+ \end{aligned}
+ \label{eq:frontier-cost}
+\end{equation}
+Each graph edge is rejected at most once in a rebuilt frontier, accounting for $m_G$. This is a per-version frontier bound. On invocation $j$, constructing the exclusion union adds $O(h_{t,j}+b_t)$ for $h_{t,j}$ retained scored identifiers. Sorting $h_t$ warm candidates and their $w_t$ survivors adds $O(h_t\log h_t+w_t\log w_t)$. State certification, endpoint tests, batch handling, response acquisition, transfer, equality checks, and commits contribute separate service work.
+
+% P:F9
+Both implicit paths eliminate complete nonedge, weight, cap, incidence, and visited arrays. H's frontier occupies $O(n+F)$ words; G uses a dynamically refined block heap without a corresponding linear worst-case guarantee. These bounds describe the access structures. Total service memory also includes graph storage, caches, batches, factorization fill, solver workspace, and logs; caches can reach catalog scale. The evaluation measures these costs together. To use either access path for certification, every score and cap must also account for numerical error.

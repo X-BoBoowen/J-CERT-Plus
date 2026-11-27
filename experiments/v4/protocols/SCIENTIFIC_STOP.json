@@ -1,0 +1,15 @@
+{
+  "schema": "jcert-v4-scientific-stop-1",
+  "timestamp_utc": "2026-11-26T06:33:33.190644+00:00",
+  "status": "method_selection_round_closed",
+  "runtime_commit": "9d09794b6a6de8a4c97f615abf3f3cae1f458b75",
+  "formal_worker_count": 36,
+  "diagnostic_worker_count": 4,
+  "decision": "retain_H_insufficient_or_mixed",
+  "recommended_method": "H",
+  "H_faster_claim": false,
+  "followup_experiments_authorized": false,
+  "remaining_work": "artifact assembly, fresh extracted-code import and targeted checks; no benchmark rerun",
+  "new_numerical_process_seconds_before_delivery_validation": 86.9591436710034,
+  "next_primary_direction": "focused manuscript polishing"
+}

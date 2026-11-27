@@ -1,0 +1,5 @@
+scope,states,whole_insertion_excluded,entered_blocks,expanded_blocks,both_paths,neither_path,flip_winners,insertion_winners,unresolved,flip_winners_with_blocks,constant_cap_pass_at_recorded_cutoff,combined_cap_pass_at_recorded_cutoff,combined_cap_only_pass_at_recorded_cutoff,all_source_complete,all_cold_end_lower_positive,all_combined_caps_strictly_below_constant,blocks_tested_total,blocks_expanded_total,leaves_generated_total,insertions_emitted_total
+complete_q4_unique,300,132,168,168,0,0,198,102,0,66,32,132,100,True,True,True,7946,3805,214,138
+all_unique,349,157,192,192,0,0,230,118,1,73,35,157,122,True,True,True,9112,4364,280,200
+complete_q4_recorded,900,396,504,504,0,0,594,306,0,198,96,396,300,True,True,True,23838,11415,642,414
+all_recorded,1047,471,576,576,0,0,690,354,3,219,105,471,366,True,True,True,27336,13092,840,600

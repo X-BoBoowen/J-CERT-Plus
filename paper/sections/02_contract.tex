@@ -1,0 +1,64 @@
+\section{Model and Decision Contract}
+\label{sec:contract}
+
+% P:C1
+The input opinion and the expressed equilibrium play different roles. Let $G=(V,E,w,\sigma)$ be an undirected simple graph on $n=|V|$ vertices, with positive edge weights $w_e$ and signs $\sigma_e\in\{-1,1\}$. The fixed input vector is $s\in[-1,1]^n$; the equilibrium solves $Az=s$, where the graph determines the operator $A\in\R^{n\times n}$. At the initial, or \emph{root}, graph, interaction strength $\alpha>0$ gives
+\begin{equation}
+ A_0=I+\alpha\sum_{\{i,j\}\in E}w_{ij}
+ (\mathbf e_i-\sigma_{ij}\mathbf e_j)
+ (\mathbf e_i-\sigma_{ij}\mathbf e_j)^\top.
+ \label{eq:operator}
+\end{equation}
+Here $I$ is the $n\times n$ identity and $\mathbf e_i\in\R^n$ is the $i$th coordinate vector. The sum is a weighted signed Laplacian~\cite{Kunegis_2010}: a positive edge penalizes the difference between its endpoint opinions, while a negative edge penalizes their sum.
+
+% P:C1a
+A finite root catalog $\mathcal C$ assigns at most one action to each unordered pair: insert a positive edge on a root nonedge, or flip a negative root edge to positive while preserving its weight. For candidate $e=\{i,j\}$, write $b_e=\mathbf e_i-\mathbf e_j$, $c_e=\mathbf e_i+\mathbf e_j$, and $\omega_e=\alpha w_e$, using the prescribed insertion weight when $e$ is a nonedge. The operator change is
+\begin{equation}
+ \Delta_e=\begin{cases}
+ \omega_e b_eb_e^\top,&\text{insertion},\\
+ \omega_e(b_eb_e^\top-c_ec_e^\top),&\text{flip}.
+ \end{cases}
+ \label{eq:updates}
+\end{equation}
+An insertion adds one endpoint direction. A flip replaces one direction by another and is an indefinite rank-two change, with eigenvalues $\pm2\omega_e$ on the endpoint subspace. Scoring a flip must account for both terms.
+
+% P:C2
+Let $T\subseteq\mathcal C$ be the committed edits, each used at most once. All candidates at this version are compared using the same input $s$ and current equilibrium $z_T\in\R^n$:
+\begin{equation}
+ \begin{aligned}
+ A_T&=A_0+\sum_{e\in T}\Delta_e,&z_T&=A_T^{-1}s,\\
+ \Phi(T)&=s^\top A_T^{-1}s,&g(e\mid T)&=\Phi(T)-\Phi(T\cup\{e\}).
+ \end{aligned}
+ \label{eq:objective}
+\end{equation}
+The energy $\Phi(T)$ equals $\|z_T\|_2^2$ plus weighted signed disagreement in the edited graph. It defines the computational objective; the gain compares one edit with its current parent.
+
+% P:C2a
+Legality supplies a stability property used throughout the paper. Every fractional operator $A(x)=A_0+\sum_e x_e\Delta_e$, $0\le x_e\le1$, satisfies $A(x)\succeq I$: $A(x)-I$ is positive semidefinite. A partial flip replaces a negative-edge term by a convex combination of negative and positive terms. The full operator $A(x)$ also has diagonal-dominance margin at least one. At a maximum-magnitude coordinate of $v\in\R^n$, this gives $\|A(x)v\|_\infty\ge\|v\|_\infty$. Consequently its induced Euclidean and maximum norms satisfy $\|A(x)^{-1}\|_2\le1$ and $\|A(x)^{-1}\|_\infty\le1$, ensuring a unique equilibrium and bounding numerical solution errors.
+
+% P:C3
+With remaining commit budget and additive tolerance $\delta\ge0$, the service may accept $a$ only if
+\begin{equation}
+ g(a\mid T)>0,\qquad
+ g(a\mid T)+\delta\ge\max_{e\in\mathcal C\setminus T}g(e\mid T).
+ \label{eq:decision}
+\end{equation}
+A \emph{tolerance stop} proves that all remaining gains are at most $\delta$; a \emph{budget stop} records exhaustion of the requested commit count. At $\delta=0$, exact maximizers are ordered by a fixed canonical identifier, and the smallest identifier wins. For the implicit catalog, $\mathrm{id}(i,j)=in+j$ for $0\le i<j<n$, with checked signed-64-bit range. Identifiers are computed from endpoints without storing the full list.
+
+% P:C4
+To prove a choice, the service combines lower evidence for the proposed winner with upper evidence for its competitors. Write $g_e=g(e\mid T)$. A scored candidate has a certified interval $g_e\in[\ell_e,u_e]$; an endpoint-only exclusion has a valid upper bound $u_e$ and $\ell_e=-\infty$. The remaining, unseen candidates share an upper bound $U_{\rm unseen}$. Empty maxima are $-\infty$. For $\delta>0$, $\ell_a>0$ and
+\begin{equation}
+ \ell_a+\delta\ge\max\{U_{\rm unseen},\max_{e\ne a}u_e\}
+ \label{eq:accept}
+\end{equation}
+suffice. At $\delta=0$, an earlier identifier requires strict exclusion; a later one permits non-strict domination or certified equality. The aggregate cut $U_{\rm unseen}<\ell_a$ safely excludes unseen rivals of either order. When no positive incumbent exists, a nonpositive upper bound excludes an edit from a positive choice. An unsupported overlap that blocks the decision requires refinement or an \emph{unresolved} result; it cannot be treated as a tie.
+
+\begin{proposition}[A rejected edit can revive]\label{prop:revival}
+Consider a three-vertex path with two negative unit-weight edges, $\alpha=1$, intrinsic opinions $s=(1,-3/10,-1/2)^\top$, and a catalog containing only its two flips. The left and right root gains are $1/20$ and $-2/5$. After the left flip, the right gain is $1/10$.
+\end{proposition}
+\begin{proof}
+The root inverse is $\frac18\left(\begin{smallmatrix}5&-2&1\\-2&4&-2\\1&-2&5\end{smallmatrix}\right)$. A left or right flip conjugates it by $\diag(-1,1,1)$ or $\diag(1,1,-1)$, respectively, where $\diag$ forms a diagonal matrix. Evaluating the four quadratic forms gives energies $621/800$, $581/800$, $941/800$, and $501/800$ for neither, left, right, and both flips. Their differences give the stated gains.
+\end{proof}
+
+% P:C5
+The example shows why exclusions belong to a graph version. The service certifies each current choice in~\eqref{eq:decision}; its optimization scope is the next edit in the sequence. We first identify the response information needed to score a contender, then show how to cover the candidates left unscored.
